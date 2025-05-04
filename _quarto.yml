@@ -1,0 +1,59 @@
+project:
+  type: website
+  title: "Tidying Messy Spreadsheets with OpenRefine"
+
+website:
+  page-navigation: true
+  search: 
+    location: navbar
+  navbar:
+    tools:
+     - icon: github
+       href: 
+       menu:
+       - text: Source Code
+         url: replace
+         target: _blank
+       - text: Report a Bug
+         url: replace
+         target: _blank
+         
+  sidebar:
+    style: "docked"
+    border: true
+    collapse-level: 1
+    contents:
+    - href: about.qmd
+      text: "About Us"
+    - href: index.qmd
+      text: "Introduction"
+    - href: setup.qmd 
+      text: "Setup & Installation"
+    - href: dataset.qmd
+      text: "Our Running Example"
+    - href: project.qmd
+      text: "Creating a New Project"
+    - href: features.qmd
+      text: "Navigating the Basics in OpenRefine"
+    - href: exploring.qmd
+      text: "Exploring Data Types & Facets"
+    - href: filtering.qmd
+      text: "Filtering & Sorting"
+    - href: transforming.qmd
+      text: "Performing Data Transformations"
+    - href: grel.qmd
+      text: "More Transformations with GREL"
+    - href: saving.qmd
+      text: "Saving & Sharing Things"
+      
+
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+    css: styles.css
+    toc: true
+
+editor: visual
+
