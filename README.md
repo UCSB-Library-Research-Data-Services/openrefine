@@ -15,5 +15,3 @@ Throughout this session, we will explore how to:
 -   Document and export workflows to ensure reproducibility and share cleaned datasets with collaborators.
 
 *If you have comments or feedback, please use the [issues](https://github.com/UCSB-Library-Research-Data-Services/qualdata-training/blob/main/enter%20URL%20for%20issues) repository feature.*
-
-![](images/cc-by.svg){width="193"}
