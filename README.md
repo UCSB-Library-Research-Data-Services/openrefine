@@ -19,7 +19,3 @@ By applying facets, sorting, clustering, GREL expressions, and reconciliation, y
 ### **Authors:**
 
 Renata Curty ([rcurty\@ucsb.edu](mailto:rcurty@ucsb.edu))
-
-CC-BY
-
-![](images/rds_hex.png){width="156"}
