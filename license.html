@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>More Transformations with GREL – Tidying Messy Spreadsheets with OpenRefine</title>
+<title>license – Tidying Messy Spreadsheets with OpenRefine</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./saving.html" rel="next">
-<link href="./transforming.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -109,7 +107,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./grel.html">More Transformations with GREL</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -177,7 +175,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./grel.html" class="sidebar-item-text sidebar-link active">
+  <a href="./grel.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">More Transformations with GREL</span></a>
   </div>
 </li>
@@ -197,165 +195,22 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#custom-data-transforms-with-grel" id="toc-custom-data-transforms-with-grel" class="nav-link active" data-scroll-target="#custom-data-transforms-with-grel">Custom Data Transforms with GREL</a></li>
+  <li><a href="#license" id="toc-license" class="nav-link active" data-scroll-target="#license">License</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">More Transformations with GREL</h1>
-</div>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
-<div class="quarto-title-meta">
 
-    
-  
-    
-  </div>
-  
+<section id="license" class="level1">
+<h1>License</h1>
+<p>This work is licensed under the Creative Commons Attribution 4.0 International License (CC BY). To attribute this work, please follow use the recommended citation listed at the bottom of the <code>index.qmd</code> page.</p>
+<p><img src="images/cc-by.svg" class="img-fluid" width="123"></p>
 
 
-</header>
-
-
-<p>Now that we’re familiar with common transformations using the menu’s preset options, let’s take a step further by exploring how to customize transformations with more advanced features.</p>
-<p>In OpenRefine, expressions can be used in various areas to enhance data cleanup and transformation. You can apply expressions in the following functions:</p>
-<p><em>Facets:</em></p>
-<ul>
-<li><p>Custom text facet</p></li>
-<li><p>Custom numeric facet</p></li>
-<li><p>Customized facets (click “Change” after creating them to open the expressions window)</p></li>
-</ul>
-<p><em>Edit Cells:</em></p>
-<ul>
-<li><p>Transform</p></li>
-<li><p>Split multi-valued cells</p></li>
-<li><p>Join multi-valued cells</p></li>
-</ul>
-<p><em>Edit Column:</em></p>
-<ul>
-<li><p>Split</p></li>
-<li><p>Join</p></li>
-<li><p>Add column based on this column</p></li>
-<li><p>Add column by fetching URLs</p></li>
-</ul>
-<p>Any of these options should prompt the Expressions Editor window as shown below:</p>
-<p><img src="images/expression-editor.png" class="img-fluid" width="448"></p>
-<p>In the Expressions Editor window, you can choose from several supported languages. By default, it uses GREL (General Refine Expression Language), OpenRefine also supports Clojure and Jython, these lasts represent Lisp and Python implementations for Java, which makes sense considering OpenRefine is java-based application.</p>
-<p>Additional expression languages may be available through extensions. While these languages differ in syntax, they support many of the same variables and functions. For example, the GREL expression <code>value.split(" ")[1]</code> is written in Jython as <code>return value.split(" ")[1]</code>. But they may also look a lot more different. For example, the GREL function <code>toUppercase(value)</code> would be expressed in Clojure as <code>(clojure.string/upper-case value)</code>.</p>
-<p>We’ll now look at some practical examples that are relevant to our sample dataset. These will give you a sense of what’s possible—but since there’s so much more you can do, we encourage you to explore further using the <a href="https://github.com/OpenRefine/OpenRefine/wiki/Recipes">Recipe</a> for more detailed information and hands-on examples. It’s a great resource to help you experiment further at your own pace.</p>
-<section id="custom-data-transforms-with-grel" class="level3">
-<h3 class="anchored" data-anchor-id="custom-data-transforms-with-grel">Custom Data Transforms with GREL</h3>
-<p>Let’s start by focusing on the <code>imdb_score</code> and <code>tmdb_score</code> columns. These columns contain floating-point numbers, right? To confirm, we can run a text facet to eyeball those values. As we examine the values, we’ll notice that tmdb scores don’t follow the one decimal format as the imdb. in the number of decimal places. You might be thinking, <em>“This would be such an easy fix in Excel—there’s literally a button for it on the toolbar. Why bother using OpenRefine for that?”</em></p>
-<p>That’s a fair point—Excel does make it easy to change how numbers <em>look</em> by formatting decimal places. But here’s the catch: Excel typically changes the <strong>display</strong> of the number, not the actual <strong>underlying value</strong>. So a number like <code>7.456</code> may <em>appear</em> as <code>7.5</code>, but it’s still stored as <code>7.456</code>, which can cause inconsistencies in downstream processes like sorting, filtering, or exporting.</p>
-<p>OpenRefine, on the other hand, lets you transform the actual data. You can standardize the number of decimal places across all values using expressions in GREL. That way, you’re not just changing how the data looks—you’re ensuring consistency at the data level, which is critical for clean, reliable datasets.</p>
-<p>Also, OpenRefine is designed for handling large datasets with repeatable, auditable transformations. So once you clean up one column, you can apply the same steps to others, or even to other projects. That’s something Excel just isn’t built for.</p>
-<section id="adjusting-decimal-points" class="level4">
-<h4 class="anchored" data-anchor-id="adjusting-decimal-points">Adjusting Decimal Points</h4>
-<p>In order to adjust tmdb scores values, we will need to use an expression. Can you guess which one?</p>
-<p>Let’s try <code>round(value * 10) / 10.0</code> which will essentially round the value to the nearest integer and then take this whole number and shift the decimal point back. Apply that, then check how many cells were modified. But wait…have you remembered to convert the values to numbers? That is a key step, since the round function only applies to numbers!</p>
-<p>Before applying the expression OpenRefine gives you a hint in case there are any syntax errors and how values will look like if you proceed. You may also choose the behavior in case some rows</p>
-<p><img src="images/expression-round.png" class="img-fluid" width="446"></p>
-<p>You may also choose how the system should behave if any error occurs during the transform:</p>
-<ul>
-<li><p><em>Keep original:</em> Leave the original value if an error occurs.</p></li>
-<li><p><em>Set to blank:</em> Replace the value with a blank if an error occurs.</p></li>
-<li><p><em>Store error:</em> Display an error message in the cell if an error occurs.</p></li>
-</ul>
-<p>In this particular case, we chose to retain the original values because we had already verified that the cells contain only numeric data. Otherwise, any blank cells would have resulted in errors.</p>
-</section>
-<section id="reusing-expressions" class="level4">
-<h4 class="anchored" data-anchor-id="reusing-expressions">Reusing Expressions</h4>
-<p>Another great feature of OpenRefine is the ability to easily reuse expressions within the same project or across different ones. The <strong>History</strong> tab records all the expressions you’ve written.</p>
-<p><img src="images/grel-reuse.png" class="img-fluid" width="458"></p>
-<p>Apparently, there’s no limit to how many are stored, so it may accumulate expressions you didn’t end up using or had to revise. For expressions that worked well, consider starring them to make future reuse easier. However, note that the history is cleared when you upgrade to a new version of OpenRefine. The <em>Help</em> tab is also handy for quick references on how to write expressions.</p>
-</section>
-<section id="dealing-with-arrays" class="level4">
-<h4 class="anchored" data-anchor-id="dealing-with-arrays">Dealing with Arrays</h4>
-<p>Now that we’ve completed a basic custom transformation and gained a better understanding of how GREL works, let’s turn our attention back to the <strong><code>country</code></strong> column. Earlier, we corrected entries where <strong>“USA”</strong> was used instead of <strong>“US”</strong> to ensure that all country codes follow the two-character format defined by the ISO.</p>
-<p>By applying a text facet, we will notice that there are over 1,030 unique values. This high number is due to OpenRefine treating different sequences of multiple countries as distinct entries. Although if we were to check country representation within our dataset, this would be challenging because the country information is currently stored as arrays.</p>
-<p>An ‘Array’ is a data type which can contain a list of values. In OpenRefine an array is represented by the use of square brackets containing a list of values separated by commas.</p>
-<p>Arrays can be sorted, de-duplicated, and manipulated in other ways in GREL expressions, but cannot be stored directly in an OpenRefine cell. Arrays in OpenRefine are usually the result of a transformation written with GREL. For example the split function takes a string, and changes it into an array based on a ‘separator’.</p>
-<p>In OpenRefine, cells are designed to hold text values—typically strings or single pieces of other data types. Arrays, which are structured collections of multiple values, cannot appear directly in a cell as an actual data type. Instead, if a cell appears to contain multiple items (like a list of countries), it’s usually represented as a string with a delimiter, here expressed as commas.</p>
-<p>To work with these values individually, you often need to split the string into separate parts using a transformation function like <code>split()</code>, which temporarily treats the cell content as an array for processing purposes.</p>
-<p>Let’s break down the approach for transforming the data, starting with replacements and then splitting arrays into individual elements. Our goal is to organize the information in a way that makes it easier to identify the top three countries leading the most productions in our dataset.</p>
-<p>Keep in mind that for rows listing two or more countries, the countries are ordered by their significance in the production—not alphabetically.</p>
-<p>While arrays are not necessarily messy data, we can apply GREL to separate pieces of information to facilitate data analysis. But first, let’s ensure we make a copy of the country column and name it countries.</p>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><img src="images/copying-column.png" class="img-fluid" width="444"></p>
-</div><div class="column" style="width:50%;">
-<p><img src="images/name-copied-column.png" class="img-fluid" width="449"></p>
-</div>
-</div>
-<p>From now on, we will continue working with the “country” column and live “countries” with the array. For the column “country” our task will be to extract only the first value in the array.</p>
-<p>First, let’s ensure we remove the both square brackets…</p>
-<p><code>value.replace('[', "").replace(']', "")</code></p>
-<p>But wait, we still have single quotes to remove…so let’s try:</p>
-<p><code>value.replace("'", "")</code></p>
-<p>And finally, we would ask to only keep the first country listed.</p>
-<p><code>value.split(",")[0]</code></p>
-<p>That’s right! The first position starts at 0 not 1.</p>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Putting everything together
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-1" class="callout-1-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>We employed a three-step approach to accomplish that, though these steps could also be consolidated into a single, more streamlined expression.</p>
-<p><code>value.replace("[", "").replace("]", "").replace("'", "").split(",")[0]</code></p>
-</div>
-</div>
-</div>
-<p>Based on this new column, which three countries lead in production across the streaming services in our dataset? If you answered the USA (US), India (IN), and Great Britain (GB), you’re absolutely right!</p>
-<div class="callout callout-style-default callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-🧠 Your Turn!
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-3" class="callout-3-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>Now, let’s perform a similar transformation on the <code>genre</code> column and answer? What are the three most common leading genres in this dataset?</p>
-<div class="callout callout-style-default callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-🔑 Answer Key
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-2" class="callout-2-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>If you were paying close attention to the earlier tip, this should’ve been a breeze! That’s because there was no need to retype the expression—you could simply reuse it. As a result, the top three genres are Drama, Comedy, and Documentary.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<p>Before we move on to the next episode, there’s one more important step to cover: data documentation. Since we’ve added new columns to our dataset, it’s essential that we update our documentation accordingly. This ensures that anyone working with the data—now or in the future—can easily understand what each column represents, how it was created, and why it’s relevant. Proper documentation keeps your project organized, reproducible, and easier to maintain.</p>
-<p>Thankfully, OpenRefine supports reproducibility by keeping a detailed history of every transformation you apply—making it easy to trace, review, or reapply steps. In the next episode, we’ll explore how to export and share your data cleaning workflow so that anyone can reproduce the exact same process with just a few clicks.</p>
-
-
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -758,18 +613,6 @@ Putting everything together
     }
   });
   </script>
-<nav class="page-navigation">
-  <div class="nav-page nav-page-previous">
-      <a href="./transforming.html" class="pagination-link" aria-label="Performing Data Transformations">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Performing Data Transformations</span>
-      </a>          
-  </div>
-  <div class="nav-page nav-page-next">
-      <a href="./saving.html" class="pagination-link" aria-label="Saving &amp; Sharing Things">
-        <span class="nav-page-text">Saving &amp; Sharing Things</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
-  </div>
-</nav>
 </div> <!-- /content -->
 
 
