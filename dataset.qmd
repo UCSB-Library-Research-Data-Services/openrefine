@@ -6,13 +6,11 @@ title: "Our Running Example"
 
 ![](images/streaming-services.png){width="370"}
 
-This workshop utilizes the `streaming-master-messy` comma-separated value (CSV) file about movie and TV shows productions featured by major streaming services and distributed in Kaggle Project under a CC0 Public License:
+This workshop utilizes the **streaming-master-messy** comma-separated value (CSV) file which is derived from the movies and TV shows featured by major streaming services and distributed in Kaggle Project under a CC0 Public License:
 
 Henrique, D. (2020). *A simple movie & TV show recommendation system*. Kaggle. <https://www.kaggle.com/code/dgoenrique/a-simple-movie-tv-show-recommendation-system?select=credits.csv>
 
-We have combined six datasets `titles.csv` files representing each of the streaming services featured in this project (Amazon Prime Video, Apple TV+, Disney+, HBO Max, Netflix, and Paramount) into a single master file.
-
-For the purposes of this lesson, the data has been intentionally modified to support the exercises.
+We have merged six `titles.csv` files—each representing one of the streaming services featured in this project (Amazon Prime Video, Apple TV+, Disney+, HBO Max, Netflix, and Paramount)—into a single master dataset.
 
 The dataset contains 25,223 rows with movies and TV series titles along with the following variables as described in the data dictionary:
 
@@ -38,7 +36,7 @@ The dataset contains 25,223 rows with movies and TV series titles along with the
 ::: {.callout-important collapse="true"}
 ## Disclaimer
 
-Please be advised that we do not vouch for the use of this dataset for actual research. The data has been specifically edited and curated for instructional purposes and may not represent a fully accurate or comprehensive source of data for formal analysis.
+Please note that, for the purposes of this lesson, the data has been intentionally modified to support the associated exercises. Therefore, we do not vouch for the use of this dataset for actual research. The data has been specifically edited and curated for instructional purposes and may not represent a fully accurate or comprehensive source of data for formal analysis.
 :::
 
 ## Downloading the Dataset
