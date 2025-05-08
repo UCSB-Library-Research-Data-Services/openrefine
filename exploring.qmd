@@ -173,7 +173,7 @@ Attempting to create a numeric or scatter plot facet will result in an error. Th
 :::
 :::
 
-We've covered the most commonly used facets in OpenRefine, but the platform also offers a range of **advanced** **and custom facets** that may be relevant to your specific project needs. We encourage you to explore the OpenRefine documentation for a deeper dive into these features.
+We've covered the most commonly used facets in OpenRefine, but the platform also offers a range of **advanced** **and custom facets** that may be relevant to your specific project needs. We encourage you to explore the [OpenRefine documentation](https://openrefine.org/docs) for a deeper dive into these features.
 
 ## Subsetting Working Dataset
 
