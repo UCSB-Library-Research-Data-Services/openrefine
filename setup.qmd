@@ -6,7 +6,7 @@ title: "Setup & Installation"
 
 ## Why OpenRefine?
 
-[OpenRefine](https://openrefine.org) is a powerful open-source multi-platform and free data cleaning and transformation tool which can handle large datasets (\~100,000 rows) depending on memory allocation. It helps users explore, clean, and refine data, making it easier to analyze and prepare for further use with no coding skills required.
+[OpenRefine](https://openrefine.org){target="_blank"} is a powerful open-source multi-platform and free data cleaning and transformation tool which can handle large datasets (\~100,000 rows) depending on memory allocation. It helps users explore, clean, and refine data, making it easier to analyze and prepare for further use with no coding skills required.
 
 OpenRefine treats all data as plain text by default, meaning it won’t automatically interpret or convert data types unless explicitly instructed to do so. This approach avoids common issues seen in tools like Excel, which auto-converts certain strings—such as gene names like "MARCH1"—into dates, leading to data corruption in scientific research[^1]. By requiring deliberate data type transformations, OpenRefine offers better control to researchers and helps preserve data integrity.
 
@@ -20,7 +20,7 @@ Additionally, since OpenRefine is open-source, you can create and share custom e
 
 ## Download & Requirements
 
-OpenRefine is designed to work with Windows, Mac, and Linux operating systems and can be downloaded from <https://openrefine.org/download>. To run OpenRefine, Java must be installed. The Mac version includes Java, and OpenRefine 3.4 or higher offers a Windows package with Java included. Alternatively, you can install Java (JRE) from [Adoptium.net](https://adoptium.net). On Windows, if Java isn’t installed, OpenRefine will automatically open a browser window with installation instructions.
+OpenRefine is designed to work with Windows, Mac, and Linux operating systems and can be downloaded from [https://openrefine.org/download](https://openrefine.org/download){target="_blank"}. To run OpenRefine, Java must be installed. The Mac version includes Java, and OpenRefine 3.4 or higher offers a Windows package with Java included. Alternatively, you can install Java (JRE) from [Adoptium.net](https://adoptium.net){target="_blank"}. On Windows, if Java isn’t installed, OpenRefine will automatically open a browser window with installation instructions.
 
 ::: {.callout-caution collapse="true"}
 ## macOS Verification
@@ -46,17 +46,17 @@ macOS will remember this choice, and you won’t need to repeat these steps the 
 
 Once you download and install it, it runs as a small web server on your own computer, and you access that local web server by using your browser.
 
-Using a web browser as a graphical interface, OpenRefine works as a desktop application. To launch it, double-click on the OpenRefine icon or run the executable. Despite of running in the browser, Openrefine does not require internet access for basic functions. It works best on browsers using the engine [WebKit](https://webkit.org), such as Chrome and Safari. No matter how you start OpenRefine, it will load its interface in your computer’s default browser.
+Using a web browser as a graphical interface, OpenRefine works as a desktop application. To launch it, double-click on the OpenRefine icon or run the executable. Despite of running in the browser, Openrefine does not require internet access for basic functions. It works best on browsers using the engine [WebKit](https://webkit.org){target="_blank"}, such as Chrome and Safari. No matter how you start OpenRefine, it will load its interface in your computer’s default browser.
 
 ::: {.callout-important collapse="true"}
 ## Starting OpenRefine Straight in Your Browser
 
-If you would like to use another browser instead, start OpenRefine and then point your chosen browser at the home screen: <http://127.0.0.1:3333>.
+If you would like to use another browser instead, start OpenRefine and then point your chosen browser at the home screen: `http://127.0.0.1:3333`.
 :::
 
 ## Some Privacy Considerations
 
-Before using any software to handle sensitive or private data, it's important to review its privacy policies. Below is a summary of key aspects of [OpenRefine's current privacy practices](https://openrefine.org/privacy):
+Before using any software to handle sensitive or private data, it's important to review its privacy policies. Below is a summary of key aspects of [OpenRefine's current privacy practices](https://openrefine.org/privacy){target="_blank"}:
 
 -   *Local Data Storage:* All data, history, and preferences in OpenRefine are stored locally on your computer. No data is sent to OpenRefine servers. The storage location depends on your OS.
 
