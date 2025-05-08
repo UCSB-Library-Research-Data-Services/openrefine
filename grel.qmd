@@ -60,7 +60,7 @@ Another great feature of OpenRefine is the ability to easily reuse expressions w
 
 Apparently, there's no limit to how many are stored, so it may accumulate expressions you didn’t end up using or had to revise. For expressions that worked well, consider starring them to make future reuse easier. However, note that the history is cleared when you upgrade to a new version of OpenRefine. The *Help* tab is also handy for quick references on how to write expressions.
 
-#### Dealing with Arrays
+### Dealing with Arrays
 
 Now that we've completed a basic custom transformation and gained a better understanding of how GREL works, let’s turn our attention back to the **`country`** column. Earlier, we corrected entries where **"USA"** was used instead of **"US"** to ensure that all country codes follow the two-character format defined by the ISO.
 
