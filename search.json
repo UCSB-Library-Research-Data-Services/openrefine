@@ -44,7 +44,7 @@
     "href": "exploring.html",
     "title": "Exploring Data Types & Facets",
     "section": "",
-    "text": "Now, let’s dive into one of the most powerful and defining features of OpenRefine—facets—which also explains why its logo is shaped like a diamond.\nFaceting is a method of exploring and filtering data to better understand its structure and content. It allows us to more easily spots errors and outliers in the data. By applying multiple filters, you can quickly uncover patterns, spot inconsistencies, and isolate specific subsets of data for closer inspection or bulk editing. A facet groups together all the similar values within a column, allowing you to easily filter and refine your dataset. It’s also incredibly useful for editing values across many records at once.",
+    "text": "Now, let’s dive into one of the most powerful and defining features of OpenRefine—facets—which also explains why its logo is shaped like a diamond.\nFaceting is a method of exploring and filtering data to better understand its structure and content. It allows us to more easily spots errors and outliers in the data. By applying multiple filters, you can quickly uncover patterns and inconsistencies, and isolate specific subsets of data for closer inspection or bulk editing. A facet groups together all the similar values within a column, allowing you to easily filter and refine your dataset. It’s also incredibly useful for editing values across many records at once.",
     "crumbs": [
       "Exploring Data Types & Facets"
     ]
