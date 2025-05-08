@@ -2,7 +2,7 @@
 title: "Our Running Example"
 ---
 
-## Streamed Movies & TV Shows Dataset
+## Streaming Dataset
 
 Over the past decade, streaming services have rapidly transformed the way people consume entertainment, rising to dominate the media landscape. As more people turn to digital platforms for personalized viewing experiences, streaming services continue to redefine modern entertainment consumption. Are you into streaming? What was the most recent movie or TV show you watched?
 
@@ -33,7 +33,7 @@ The dataset contains 25,223 rows with movies and TV series titles along with the
 -   imdb_score: Score on the Internet Movie Database (IMDB).
 -   imdb_votes: Votes on the Internet Movie Database (IMDB).
 -   tmdb_popularity: Votes on The Movie Database (TMDB).
--   tmdb_score: Score on on The Movie Database TMDB.
+-   tmdb_score: Score on on The Movie Database (TMDB).
 
 ## Downloading the Dataset
 
