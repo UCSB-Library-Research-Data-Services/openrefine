@@ -254,7 +254,22 @@ Adjusting Display Settings
 <p>We will be using the first option and select the example dataset. This should prompt an auto preview of the dataset, for a quick inspection of the first rows, and with some configuration and parsing options, including character encoding (see <a href="https://perma.cc/Q42N-M5YK">handout</a> for more info on this topic). OpenRefine automatically detects the character encoding used in your file.</p>
 <p><img src="images/preview-project-02.png" class="img-fluid"></p>
 <p>We’ll stick with the default settings for now—they typically work well for most CSV datasets. However, if the data preview doesn’t look quite right, it may be worth adjusting the parsing options to better match your file’s structure.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Color and other formatting
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
 <p>Keep in mind that OpenRefine does <strong>not</strong> retain any original formatting from your file. Elements like cell colors, font styles, or background shading will be lost during import. Hyperlinked text will appear as plain text, though OpenRefine will detect any URLs and make them clickable within the project interface.</p>
+</div>
+</div>
+</div>
 <p>That said, relying on visual formatting or emphasis—like colors or bold text—to convey important meaning isn’t recommended in data management. These elements aren’t machine-readable and can lead to inconsistencies or misinterpretation during analysis. It’s always better to encode meaning directly in the data using clearly labeled columns or consistent values.</p>
 <p>If your spreadsheet includes multiple worksheets, OpenRefine will display each one along with its row count. You’ll need to choose a single worksheet to import—only one can be selected at a time.</p>
 <p><img src="images/example-multiple-sheets.png" class="img-fluid"></p>
