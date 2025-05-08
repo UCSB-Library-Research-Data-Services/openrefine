@@ -200,8 +200,8 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#getting-things-started" id="toc-getting-things-started" class="nav-link active" data-scroll-target="#getting-things-started">Getting Things Started</a></li>
   <li><a href="#saving-things" id="toc-saving-things" class="nav-link" data-scroll-target="#saving-things">Saving Things</a>
   <ul class="collapse">
-  <li><a href="#where-are-projects-stored-locally" id="toc-where-are-projects-stored-locally" class="nav-link" data-scroll-target="#where-are-projects-stored-locally">Where are projects stored locally?</a></li>
-  <li><a href="#what-happens-to-the-original-dataset" id="toc-what-happens-to-the-original-dataset" class="nav-link" data-scroll-target="#what-happens-to-the-original-dataset">What happens to the original dataset?</a></li>
+  <li><a href="#where-are-projects-stored" id="toc-where-are-projects-stored" class="nav-link" data-scroll-target="#where-are-projects-stored">Where are Projects Stored?</a></li>
+  <li><a href="#what-happens-to-the-original-dataset" id="toc-what-happens-to-the-original-dataset" class="nav-link" data-scroll-target="#what-happens-to-the-original-dataset">What Happens to the Original Dataset?</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -282,8 +282,8 @@ Color and Other Formatting
 <p>OpenRefine automatically records all your actions, which are listed in the <code>Undo/Redo</code> panel we will be exploring more soon. This includes things like flagging and starring rows. However, it does <em>not</em> save facets (which will learn more about), filters, or any visual changes you’ve made—such as the number of visible rows, column sorting, or collapsed columns. A good rule to remember: if it’s not in the Undo/Redo panel, it won’t be saved when you exit the project.</p>
 <p>By default, OpenRefine autosaves your project every five minutes. If you’d like you can adjust this setting using the command line and following the instructions laid out <a href="https://openrefine.org/docs/manual/running#jvm-preferences">here</a>.</p>
 <p>While you can’t save general view settings, you can save and share your current facets and filters. To do this, click <strong><code>Permalink</code></strong>. This generates a new URL that reloads the project with your current facets and filters, including specific settings (like sorting by count instead of name). Copy and save that URL to return to the same filtered view later.</p>
-<section id="where-are-projects-stored-locally" class="level3">
-<h3 class="anchored" data-anchor-id="where-are-projects-stored-locally">Where are projects stored locally?</h3>
+<section id="where-are-projects-stored" class="level3">
+<h3 class="anchored" data-anchor-id="where-are-projects-stored">Where are Projects Stored?</h3>
 <p>All of your raw project files are stored in your OpenRefine <em>work directory</em>. Each file is named using the unique <code>Project ID</code> assigned by OpenRefine. You can find this ID by going to the <code>Open Project</code> screen and clicking the <strong>About</strong> link next to the project. Let’s take a moment to check where your files are.</p>
 <p>OpenRefine stores data in two places:</p>
 <ul>
@@ -299,7 +299,7 @@ Color and Other Formatting
 <p>We will keep the default configuration for now, but you can customize the desired location by following these <a href="https://openrefine.org/docs/manual/installing#set-where-data-is-stored">instructions</a>.</p>
 </section>
 <section id="what-happens-to-the-original-dataset" class="level3">
-<h3 class="anchored" data-anchor-id="what-happens-to-the-original-dataset">What happens to the original dataset?</h3>
+<h3 class="anchored" data-anchor-id="what-happens-to-the-original-dataset">What Happens to the Original Dataset?</h3>
 <p>OpenRefine gives researchers piece of mind by following a key best practice in data management: always preserve an untouched version of your original dataset. Why? Because having an unaltered copy ensures you can always return to the source if something goes wrong, verify your changes, or reprocess the data with a different approach—without risking data loss or corruption.</p>
 
 
