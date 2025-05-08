@@ -27,39 +27,39 @@ We will be using the first option and select the example dataset. This should pr
 We’ll stick with the default settings for now—they typically work well for most CSV datasets. However, if the data preview doesn’t look quite right, it may be worth adjusting the parsing options to better match your file’s structure.
 
 ::: {.callout-important collapse="true" icon="true"}
-## Color and other formatting
-Keep in mind that OpenRefine does **not** retain any original formatting from your file. Elements like cell colors, font styles, or background shading will be lost during import. Hyperlinked text will appear as plain text, though OpenRefine will detect any URLs and make them clickable within the project interface.
-:::
+## Color and Other Formatting
+Keep in mind that OpenRefine **does not** retain any original formatting from your file. Elements like cell colors, font styles, or background shading will be lost during import. Hyperlinked text will appear as plain text, though OpenRefine will detect any URLs and make them clickable within the project interface. 
 
 That said, relying on visual formatting or emphasis—like colors or bold text—to convey important meaning isn’t recommended in data management. These elements aren't machine-readable and can lead to inconsistencies or misinterpretation during analysis. It's always better to encode meaning directly in the data using clearly labeled columns or consistent values.
+:::
 
 If your spreadsheet includes multiple worksheets, OpenRefine will display each one along with its row count. You’ll need to choose a single worksheet to import—only one can be selected at a time.
 
 ![](images/example-multiple-sheets.png)
 
-In the upper-right corner, you can rename your project and add tags to link it with related projects. Once you're set, simply click `Create Project` Now that we've created our project, let's take a step back and explore a few more features. Click the OpenRefine logo on the left-hand side and select `Open Project` Great! You should see the project we just created. By clicking on `About` you can edit the project metadata, helping keep everything organized and easy to locate. Experiment yourself.
+In the upper-right corner, you can rename your project and add tags to link it with related projects. Once you're set, simply click `Create Project` Now that we've created our project, let's take a step back and explore a few more features. Click the OpenRefine logo on the left-hand side and select `Open Project` Great! You should see the project we just created. By clicking on **About** you can edit the project metadata, helping keep everything organized and easy to locate. Experiment yourself.
 
 ![](images/project-details-01.png)
 
-If you scroll down, you'll see the `Project ID` assigned to your new project in the metadata panel—nice work! Now that everything’s set up, let’s jump back into the project and explore some of OpenRefine’s powerful features. To return to your project, just click on its name.
+If you scroll down, you'll see the **Project ID** assigned to your new project in the metadata panel—nice work! Now that everything’s set up, let’s jump back into the project and explore some of OpenRefine’s powerful features. To return to your project, just click on its name.
 
 ## Saving Things
 
-OpenRefine automatically records all your actions, which are listed in the `Undo/Redo` panel we will be exploring more soon. This includes things like flagging and starring rows. However, it does *not* save facets (which will learn more about), filters, or any visual changes you’ve made—such as the number of visible rows, column sorting, or collapsed columns. A good rule to remember: if it’s not in the `Undo/Redo panel`, it won’t be saved when you exit the project.
+OpenRefine automatically records all your actions, which are listed in the `Undo/Redo` panel we will be exploring more soon. This includes things like flagging and starring rows. However, it does *not* save facets (which will learn more about), filters, or any visual changes you’ve made—such as the number of visible rows, column sorting, or collapsed columns. A good rule to remember: if it’s not in the Undo/Redo panel, it won’t be saved when you exit the project.
 
 By default, OpenRefine autosaves your project every five minutes. If you'd like you can adjust this setting using the command line and following the instructions laid out [here](https://openrefine.org/docs/manual/running#jvm-preferences).
 
-While you can't save general view settings, you *can* save and share your current facets and filters. To do this, click **`Permalink`**. This generates a new URL that reloads the project with your current facets and filters, including specific settings (like sorting by count instead of name). Copy and save that URL to return to the same filtered view later.
+While you can't save general view settings, you can save and share your current facets and filters. To do this, click **`Permalink`**. This generates a new URL that reloads the project with your current facets and filters, including specific settings (like sorting by count instead of name). Copy and save that URL to return to the same filtered view later.
 
 ### Where are projects stored locally?
 
-All of your raw project files are stored in your OpenRefine *work directory*. Each file is named using the unique `Project ID` assigned by OpenRefine. You can find this ID by going to the `Open Project` screen and clicking the `About` link next to the project. Let's take a moment to check where your files are.
+All of your raw project files are stored in your OpenRefine *work directory*. Each file is named using the unique `Project ID` assigned by OpenRefine. You can find this ID by going to the `Open Project` screen and clicking the **About** link next to the project. Let's take a moment to check where your files are.
 
 OpenRefine stores data in two places:
 
 -   Program files in the program directory, wherever you’ve chose to installed it
 
--   Project files in what we call the `workspace directory`
+-   Project files in what we call the **workspace directory**
 
 You can access the workspace directory by:
 
