@@ -200,9 +200,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#common-transforms" id="toc-common-transforms" class="nav-link active" data-scroll-target="#common-transforms">Common Transforms</a></li>
   <li><a href="#clustering" id="toc-clustering" class="nav-link" data-scroll-target="#clustering">Clustering</a>
   <ul class="collapse">
-  <li><a href="#key-collision-methods" id="toc-key-collision-methods" class="nav-link" data-scroll-target="#key-collision-methods"><strong>Key Collision Methods</strong></a></li>
-  <li><a href="#nearest-neighbor-methods" id="toc-nearest-neighbor-methods" class="nav-link" data-scroll-target="#nearest-neighbor-methods"><strong>Nearest Neighbor Methods</strong></a></li>
-  <li><a href="#most-commonly-used-openrefine-clustering-methods" id="toc-most-commonly-used-openrefine-clustering-methods" class="nav-link" data-scroll-target="#most-commonly-used-openrefine-clustering-methods">Most Commonly Used OpenRefine Clustering Methods</a></li>
+  <li><a href="#most-common-clustering-methods" id="toc-most-common-clustering-methods" class="nav-link" data-scroll-target="#most-common-clustering-methods">Most Common Clustering Methods</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -240,20 +238,20 @@ ul.task-list li input[type="checkbox"] {
 <p>Remember we have several entries for the same streaming service but with some variations? Editing those values for deduplication manually could take us too much time.</p>
 <p>Now, let’s move to the <strong>streaming column</strong>. We want to keep six unique values in a simplified choice in title case: Amazon, Apple, Disney, Max, Netflix and Paramount. We can use the <code>Edit cells &gt; Common transforms &gt; To titlecase</code> and we end up with less choices, saving us quite some clicks and edits.</p>
 <p><strong>Clustering</strong> helps you find and merge similar but inconsistently written values. It’s super useful when you have messy data — think entires like: “New York”, “new york”, “NewYork”, or “N.Y”. You know they’re referring to the same location — but the computer doesn’t, unless you help it out. OpenRefine offers two main methods to resolve these type of issues.</p>
-<section id="key-collision-methods" class="level3">
-<h3 class="anchored" data-anchor-id="key-collision-methods"><strong>Key Collision Methods</strong></h3>
+<section id="key-collision-methods" class="level4">
+<h4 class="anchored" data-anchor-id="key-collision-methods"><strong>Key Collision Methods</strong></h4>
 <p>These methods <strong>simplify</strong> the data to make it easier to compare. They look for <strong>basic patterns</strong> (like removing spaces, turning everything into lowercase, or sorting words alphabetically) to figure out if two things are similar.</p>
 <p>Think of it like simplifying everything to a “core” version and then checking if the core versions match.</p>
 <p><strong>Example</strong>: “Apple Inc.” and “INC. Apple” will both be simplified to the same “core version” and grouped together.</p>
 </section>
-<section id="nearest-neighbor-methods" class="level3">
-<h3 class="anchored" data-anchor-id="nearest-neighbor-methods"><strong>Nearest Neighbor Methods</strong></h3>
+<section id="nearest-neighbor-methods" class="level4">
+<h4 class="anchored" data-anchor-id="nearest-neighbor-methods"><strong>Nearest Neighbor Methods</strong></h4>
 <p>These methods <strong>directly compare</strong> the values to see how similar they are. They measure <strong>how much</strong> you’d need to change one value to turn it into the other (like fixing typos or small differences).</p>
 <p>Think of it like checking each pair of values closely and asking, “How different are these from each other?”</p>
 <p><strong>Example</strong>: “Micheal” and “Michael” are compared and seen as very similar because they only differ by one letter.</p>
 </section>
-<section id="most-commonly-used-openrefine-clustering-methods" class="level3">
-<h3 class="anchored" data-anchor-id="most-commonly-used-openrefine-clustering-methods">Most Commonly Used OpenRefine Clustering Methods</h3>
+<section id="most-common-clustering-methods" class="level3">
+<h3 class="anchored" data-anchor-id="most-common-clustering-methods">Most Common Clustering Methods</h3>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 20%">
