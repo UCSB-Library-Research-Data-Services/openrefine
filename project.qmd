@@ -26,7 +26,10 @@ We will be using the first option and select the example dataset. This should pr
 
 We’ll stick with the default settings for now—they typically work well for most CSV datasets. However, if the data preview doesn’t look quite right, it may be worth adjusting the parsing options to better match your file’s structure.
 
+::: {.callout-important collapse="true" icon="true"}
+## Color and other formatting
 Keep in mind that OpenRefine does **not** retain any original formatting from your file. Elements like cell colors, font styles, or background shading will be lost during import. Hyperlinked text will appear as plain text, though OpenRefine will detect any URLs and make them clickable within the project interface.
+:::
 
 That said, relying on visual formatting or emphasis—like colors or bold text—to convey important meaning isn’t recommended in data management. These elements aren't machine-readable and can lead to inconsistencies or misinterpretation during analysis. It's always better to encode meaning directly in the data using clearly labeled columns or consistent values.
 
