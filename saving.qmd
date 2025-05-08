@@ -20,9 +20,9 @@ Clicking `Extract..` should prompt the extract operating history, which is essen
 
 You can choose to export specific actions or the entire file.
 
-## **Ensuring reproducibility in your data cleaning process**
+## **Supporting Reproducibility**
 
-By extracting these set of operations (edits) from one project and you may "reapply" them to another project or even within the same project. This is useful for repeating the same transformations across different datasets or for sharing your workflow with others. 
+By extracting this set of operations (edits) from a single project, you make your data cleaning process more transparent and reproducible. These operations can then be reapplied to other projects—or reused within the same project—enabling consistent transformations across datasets. This approach also makes it easier to share your workflow with others or revisit it yourself in the future.
 
 This export is useful not only for reapplying edits to similar datasets, but also for enhancing transparency and reproducibility by clearly documenting the transformation from raw to analysis-ready data. You may reuse operations, by clicking `Apply...` and uploading the file.
 
