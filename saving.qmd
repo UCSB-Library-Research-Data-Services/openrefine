@@ -19,3 +19,11 @@ Clicking `Extract..` should prompt the extract operating history, which is essen
 You can choose to export specific actions or the entire file. This export is useful not only for reapplying edits to similar datasets, but also for enhancing transparency and reproducibility by clearly documenting the transformation from raw to analysis-ready data. You may reuse operations, by clicking `Apply...` and uploading the file.
 
 Let's see how does that work? Export the file and save it. Then, go to the `Undo/Redo` panel and go back to the step where the project was created and apply the file with all the actions you have performed. Cool, right?
+
+### Upgrades & Backups
+
+OpenRefine is continuously evolving—bringing new features, performance upgrades, and sometimes changes to how projects are handled. While these updates improve the tool, they may also introduce compatibility issues with older project files.
+
+If you're upgrading from an older version of OpenRefine and already have projects saved on your computer, it's strongly recommended that you back them up before installing the new version.
+
+During these transitions, to protect your work, we advise you to first locate your **`workspace directory`** (this is where all your project files are stored). Then, copy everything in that folder and paste it into a separate backup location on your computer. This simple step ensures that your data remains safe, no matter what changes come with the upgrade.

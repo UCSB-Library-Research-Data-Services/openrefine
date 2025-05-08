@@ -4,6 +4,8 @@ title: "Our Running Example"
 
 ## Streamed Movies & TV Shows Dataset
 
+Over the past decade, streaming services have rapidly transformed the way people consume entertainment, rising to dominate the media landscape. As more people turn to digital platforms for personalized viewing experiences, streaming services continue to redefine modern entertainment consumption. What was the last movie or show you have watched?
+
 ![](images/streaming-services.png){width="370"}
 
 This workshop utilizes the **streaming-master-messy** comma-separated value (CSV) file which is derived from the movies and TV shows featured by major streaming services and distributed in Kaggle Project under a CC0 Public License[^1].
