@@ -175,8 +175,10 @@ Attempting to perform a numeric or a scatter plot facet will throw an error beca
 
 We've covered the most commonly used facets in OpenRefine, but the platform also offers a range of advanced and custom facets that may be relevant to your specific project needs. We encourage you to explore the OpenRefine documentation for a deeper dive into these features.
 
-## Facets for Subsetting Working Dataset
+## Subsetting Working Dataset
 
-Facets can be also very handy to subset the dataset and make it more easily manageable. Let's say you want to focus only on the shows for a while, or even export this subset. How would you do that? You can perform a text facet for the column **type** and select **show**, you will notice the number of matching rows in the grid header will change accordingly. From now on, you will be only working with those rows, unless you click revert or close the facet panel.
+Facets can be also very handy to subset the dataset and make it more easily manageable. Let's say you want to focus only on the TV shows, or even export this subset. How would you do that?
+
+You can perform a text facet for the column **type** and select **show**, you will notice the number of matching rows in the grid header will change accordingly. From now on, you will be only working with those rows, unless you click revert or close the facet panel.
 
 If you want to export that subset of shows click export on the right side of the project bar and select your preferred format. As a reminder, the **permalink** will save all active facets for your project!
