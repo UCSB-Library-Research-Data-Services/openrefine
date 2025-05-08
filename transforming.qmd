@@ -18,7 +18,7 @@ Now, let's move to the **streaming column**. We want to keep six unique values i
 
 **Clustering** helps you find and merge similar but inconsistently written values. It’s super useful when you have messy data — think entires like: “New York”, “new york”, “NewYork”, or “N.Y". You know they’re referring to the same location — but the computer doesn’t, unless you help it out. OpenRefine offers two main methods to resolve these type of issues.
 
-### **Key Collision Methods**
+#### **Key Collision Methods**
 
 These methods **simplify** the data to make it easier to compare. They look for **basic patterns** (like removing spaces, turning everything into lowercase, or sorting words alphabetically) to figure out if two things are similar.
 
@@ -26,7 +26,7 @@ Think of it like simplifying everything to a "core" version and then checking if
 
 **Example**: "Apple Inc." and "INC. Apple" will both be simplified to the same "core version" and grouped together.
 
-### **Nearest Neighbor Methods**
+#### **Nearest Neighbor Methods**
 
 These methods **directly compare** the values to see how similar they are. They measure **how much** you’d need to change one value to turn it into the other (like fixing typos or small differences).
 
@@ -34,7 +34,7 @@ Think of it like checking each pair of values closely and asking, "How different
 
 **Example**: "Micheal" and "Michael" are compared and seen as very similar because they only differ by one letter.
 
-### Most Commonly Used OpenRefine Clustering Methods
+### Most Common Clustering Methods
 
 | **Method**                               | Category         | **Description**                                                        | **Good For**                        | **Example**                    |
 |---------------|---------------|---------------|---------------|---------------|

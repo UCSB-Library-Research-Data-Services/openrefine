@@ -6,7 +6,7 @@ title: "Filtering & Sorting"
 
 At times, you might need to isolate certain parts of your data or carry out tasks on only a specific segment. This can be done by using filters to selectively display the data that meets your criteria.
 
-### Including/excluding data entries on facets
+### Including/Excluding Data Entries on Facets
 
 One way to filter down our data is to use the `include` or `exclude` buttons on the entries in a text facet. If you still have your text facet for the column **title**, you can use it. If you’ve closed that facet, recreate it by selecting `Facet` \> `Text facet` and change from **name** to **count**.
 
@@ -24,7 +24,7 @@ One way to filter down our data is to use the `include` or `exclude` buttons on 
 
 Click on `reset` at the top-right of the facet before continuing to the next step.
 
-### Text filters
+### Text Filters
 
 One way to filter data is to create a text filter on a column. Close all facets you may have created previously and reinstate the text facet on the **title** column.
 
@@ -50,7 +50,7 @@ After you apply a sorting method, you can make it permanent, remove it, reverse 
 
 If you have multiple sorting methods applied, they will work in the order you applied them (represented in order in the Sort menu). For example, you can sort the “title” column alphabetically, and then sort by "release year". If you apply those in a different order - sort "release year" the dataset first, and then alphabetically by "title" - your dataset will look different.
 
-### Sorting by multiple columns
+### Sorting by Multiple Columns
 
 You can sort by multiple columns by performing sort on additional columns. The sort will depend on the order in which you select columns to sort. To restart the sorting process with a particular column, check the "sort by this column alone" box in the `Sort` pop-up menu.
 
