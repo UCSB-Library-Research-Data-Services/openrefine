@@ -161,19 +161,19 @@ OpenRefine will interpret them as full dates by assuming *January 1st as the def
 This default behavior allows OpenRefine to handle partial date inputs consistently, making it easier to sort, filter, and analyze date-based data.
 
 ::: {.callout-note collapse="true" icon="false"}
-## 🧠 Your Turn! Convert `release_year` to Date Type
+## 🧠 Your Turn! Convert **release_year** to Date Type
 
-Back to the `release_year` column — let's change it to date type.\
+Back to the **release_year** column — let's change it to **date type**.\
 Can you create a numeric or a scatter plot facet?
 
 ::: {.callout-note collapse="true" icon="false"}
 ## 🔑 Answer Key
 
-Attempting to perform a numeric or a scatter plot facet will throw an error because, despite having numbers, the data type is not set as numeric.
+Attempting to create a numeric or scatter plot facet will result in an error. This happens when the data contains numbers but is not explicitly set to a numeric data type.
 :::
 :::
 
-We've covered the most commonly used facets in OpenRefine, but the platform also offers a range of advanced and custom facets that may be relevant to your specific project needs. We encourage you to explore the OpenRefine documentation for a deeper dive into these features.
+We've covered the most commonly used facets in OpenRefine, but the platform also offers a range of **advanced** **and custom facets** that may be relevant to your specific project needs. We encourage you to explore the OpenRefine documentation for a deeper dive into these features.
 
 ## Subsetting Working Dataset
 
