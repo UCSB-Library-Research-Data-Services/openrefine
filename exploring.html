@@ -199,7 +199,8 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#text-facets" id="toc-text-facets" class="nav-link active" data-scroll-target="#text-facets">Text Facets</a>
   <ul class="collapse">
-  <li><a href="#checking-for-errors" id="toc-checking-for-errors" class="nav-link" data-scroll-target="#checking-for-errors">Checking For Errors</a></li>
+  <li><a href="#checking-for-duplicates" id="toc-checking-for-duplicates" class="nav-link" data-scroll-target="#checking-for-duplicates">Checking for Duplicates</a></li>
+  <li><a href="#checking-for-errors" id="toc-checking-for-errors" class="nav-link" data-scroll-target="#checking-for-errors">Checking for Errors</a></li>
   </ul></li>
   <li><a href="#numeric-facets" id="toc-numeric-facets" class="nav-link" data-scroll-target="#numeric-facets">Numeric Facets</a></li>
   <li><a href="#date-type" id="toc-date-type" class="nav-link" data-scroll-target="#date-type">Date Type</a></li>
@@ -245,6 +246,8 @@ ul.task-list li input[type="checkbox"] {
 <p>“Five times, right? Let’s click <code>Include</code> to review the items and check for any duplicates.</p>
 <p><img src="images/title-count-cinderella.png" class="img-fluid"></p>
 <p>You’ll notice that each entry corresponds to a unique production, often from a different year or with a distinct plot, which is why they each have their own specific ID. However, it’s important to note that the same production might appear on multiple streaming services, sharing the same ID. While we don’t have duplicate entries within a single streaming service, we do need to check for cases where the same production appears under different services with the same ID.</p>
+<section id="checking-for-duplicates" class="level3">
+<h3 class="anchored" data-anchor-id="checking-for-duplicates">Checking for Duplicates</h3>
 <p>To perform this check, we can create a text facet for the <strong>ID</strong> <strong>column</strong>. But before proceeding, we should exclude any values already filtered for ‘Cinderella’. If we don’t do this, the new facet will only apply to the selected rows and might not cover all instances of a production across streaming services.</p>
 <p><img src="images/ids-facetting.png" class="img-fluid"></p>
 <p>Manually inspecting all the entries to check for duplicates would take a considerable amount of time. A simple workaround is to create a new column that combines the values from the <code>ID</code> and <code>Streaming</code> columns. Then, by running a <strong>Text facet</strong> and sorting by count, we can easily spot any duplicates:</p>
@@ -263,8 +266,9 @@ ul.task-list li input[type="checkbox"] {
 <p><img src="images/banner-transforms.png" class="img-fluid"></p>
 <p>This warning shows how many transformations were applied and even gives you a preview of what the equivalent expression for those actions would look like. We’ll explore these expressions and how to use them more effectively in future episodes.</p>
 <p>As you can see, a text facet can come in handy for providing some quick insights into patterns, and spotting potential inconsistencies or duplicates across your dataset.</p>
+</section>
 <section id="checking-for-errors" class="level3">
-<h3 class="anchored" data-anchor-id="checking-for-errors">Checking For Errors</h3>
+<h3 class="anchored" data-anchor-id="checking-for-errors">Checking for Errors</h3>
 <p>Let’s now turn our attention to the <strong>classification</strong> column. This column should represent the ratings from <a href="https://www.filmratings.com">The Classification and Rating Administration (CARA)</a>. How many unique values are represented in the dataset? You should find 18 distinct entries—correct? It appears that the original data collector could have enforced validation rules to ensure consistency in this field, but since that wasn’t done, we can use faceted analysis to identify inconsistencies or errors. How many could you identify? Have you noticed the question marks and NAs? What approach would you take to clean and standardize these entries?</p>
 <p>Since those entries represent either non-existent data or uncertainty—and given that we already have many productions with unknown classifications (13,132)—we might consider setting those values to blank as well. To do this, we can first run a text facet and select the entries we want to amend:</p>
 <p><img src="images/include-choices-classification.png" class="img-fluid"></p>
