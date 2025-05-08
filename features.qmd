@@ -50,7 +50,7 @@ Titles that meet *both* criteria (e.g. popular but missing age ratings) will now
 
 OpenRefine is primarily designed for data cleaning rather than adding new columns or rows. However, it does provide essential tools for reorganizing your dataset, including renaming, reordering, and deleting columns.
 
-For example, we want to remove the `imdb_votes` and `tmdb_votes` columns. This can be done in one of two ways: by deleting each column individually or by using the "All" column dropdown to manage multiple columns at once. Choose the method that works best for you to exclude them:
+For example, we want to remove the **imdb_votes** and **tmdb_votes** columns. This can be done in one of two ways: by deleting each column individually or by using the "All" column dropdown to manage multiple columns at once. Choose the method that works best for you to exclude them:
 
 ::: columns
 ::: {.column width="50%"}
