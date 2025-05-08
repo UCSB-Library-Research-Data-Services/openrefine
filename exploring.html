@@ -250,7 +250,7 @@ ul.task-list li input[type="checkbox"] {
 <h3 class="anchored" data-anchor-id="checking-for-duplicates">Checking for Duplicates</h3>
 <p>To perform this check, we can create a text facet for the <strong>ID</strong> <strong>column</strong>. But before proceeding, we should exclude any values already filtered for ‘Cinderella’. If we don’t do this, the new facet will only apply to the selected rows and might not cover all instances of a production across streaming services.</p>
 <p><img src="images/ids-facetting.png" class="img-fluid"></p>
-<p>Manually inspecting all the entries to check for duplicates would take a considerable amount of time. A simple workaround is to create a new column that combines the values from the <code>ID</code> and <code>Streaming</code> columns. Then, by running a <strong>Text facet</strong> and sorting by count, we can easily spot any duplicates:</p>
+<p>Manually inspecting all the entries to check for duplicates would take a considerable amount of time. A simple workaround is to create a new column that combines the values from the <strong>id</strong> and <strong>streaming</strong> columns. Then, by running a <strong>Text facet</strong> and sorting by count, we can easily spot any duplicates:</p>
 <p>First we add a new column based on the existing one…</p>
 <p><img src="images/add-column.png" class="img-fluid"></p>
 <p>We will give it a name. Let’s say <strong>id|streaming</strong></p>
@@ -274,8 +274,8 @@ ul.task-list li input[type="checkbox"] {
 <p><img src="images/include-choices-classification.png" class="img-fluid"></p>
 <p>Now that we have included those six choices and eight entries, we can apply a `common transform` and set those values as nulls.</p>
 <p><img src="images/amend-null.png" class="img-fluid"></p>
-<p>Now, let’s run another text facet for the same column and check how many choices we have. But wait, have you noticed the empty string option? An empty string will work the same as null for most purposes. Can you guess when it will not be the case? An empty string (<code>""</code>) will not behave the same as null when you use functions or filters that specifically distinguish between null and empty. Setting it as <code>null</code> represent “no data”, making it more explicit the data is missing, unknown or not applicable. But let’s not get too sidetracked. We will cover more about transformations in the next episodes.</p>
-<p>Now we will use faceting to look for potential errors in data entry in the <strong>streaming</strong> column. First, Scroll over to the <strong>streaming</strong> column and then, click the down arrow and choose <code>Facet</code> &gt; <code>Text facet</code>.</p>
+<p>Now, let’s run another text facet for the same column and check how many choices we have. But wait, have you noticed the empty string option? An empty string will work the same as null for most purposes. Can you guess when it will not be the case? An **empty string (““)** will not behave the same as null when you use functions or filters that specifically distinguish between null and empty. Setting it as <strong>null</strong> represent”no data”, making it more explicit the data is missing, unknown or not applicable. But let’s not get too sidetracked. We will cover more about transformations in the next episodes.</p>
+<p>Now we will use faceting to look for potential errors in data entry in the <strong>streaming</strong> column. First, scroll over to the <strong>streaming</strong> column and then, click the down arrow and choose <code>Facet</code> &gt; <code>Text facet</code>.</p>
 <p><img src="images/text-facet-menu.png" class="img-fluid"></p>
 <p>Alright, in the left panel, you should now see a box containing every unique value in the <strong>streaming</strong> column along with a number representing how many times that value occurs in the column.</p>
 <p><img src="images/streaming-facet.png" class="img-fluid"></p>
@@ -328,7 +328,7 @@ ul.task-list li input[type="checkbox"] {
 <p>When you import a table into OpenRefine, all columns are initially automatically treated as text, representing a string of sequential characters.</p>
 <p>Only observations that include only numerals (0-9) can be transformed to numbers. If you apply a number transformation to a column that doesn’t meet this criteria, and then click the Undo / Redo tab, you will see a step that starts with Text transform on 0 cells. This means that the data in that column was not transformed.</p>
 <p>For columns with numeric values we can convert it using the <strong><code>Edit cells &gt; Common transforms</code></strong>. In this section, we’ll experiment with converting columns to numbers and explore the additional features and functionality this unlocks.</p>
-<p>Sometimes there are non-number values or blanks in a column which may represent errors in data entry and we want to find them. We can do that with a <code>Numeric facet</code>. So if you try to create a numeric facet for the column <strong>release_year</strong>. The facet will be empty because OpenRefine sees those values as text strings.</p>
+<p>Sometimes there are non-number values or blanks in a column which may represent errors in data entry and we want to find them. We can do that with a <strong>numeric facet</strong>. So if you try to create a numeric facet for the column <strong>release_year</strong>. The facet will be empty because OpenRefine sees those values as text strings.</p>
 <p>To transform cells into numbers, click the down arrow for that column, then <code>Edit cells</code> &gt; <code>Common transforms…</code> &gt; <code>To number</code>. You will notice the values will change from left-justified to right-justified, and black to green color.</p>
 <div class="callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
@@ -342,7 +342,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <div id="callout-4" class="callout-4-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>The dataset included other numeric columns, but let’s focus on <code>imdb_score</code> and <code>tmdb_score</code>. How does changing the format for these two column change their faceting display?</p>
+<p>The dataset included other numeric columns, but let’s focus on <strong>imdb_score</strong> and <strong>tmdb_score</strong>. How does changing the format for these two column change their faceting display?</p>
 <div class="callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
