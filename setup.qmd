@@ -6,11 +6,15 @@ title: "Setup & Installation"
 
 ## Why OpenRefine?
 
-[OpenRefine](https://openrefine.org) is a powerful open-source multiplatform and free data cleaning and transformation tool designed to work with large datasets. It helps users explore, clean, and refine data, making it easier to analyze and prepare for further use with no coding skills required.
+[OpenRefine](https://openrefine.org) is a powerful open-source multiplatform and free data cleaning and transformation tool. It helps users explore, clean, and refine data, making it easier to analyze and prepare for further use with no coding skills required.
 
-One of the key strengths of OpenRefine is its ability to track every action you take through its project history feature. This means you can easily review, reverse, or revisit any step in your data cleaning process. It makes the entire workflow reproducible, as you can apply the same steps to other datasets or go back to previous stages without losing any progress.
+OpenRefine treats all data as plain text by default, meaning it won’t automatically interpret or convert data types unless explicitly instructed to do so. This approach avoids common issues seen in tools like Excel, which auto-converts certain strings—such as gene names like "MARCH1"—into dates, leading to data corruption in scientific research[^1]. By requiring deliberate data type transformations, OpenRefine offers better control to researchers and helps preserve data integrity.
 
-What really sets OpenRefine apart, though, is how it combines this project history with version control. This is especially useful when working in teams. As your project evolves, version control allows you to track changes over time, keeping everyone aligned and on the same page. If you’re working with multiple collaborators, you can rely on OpenRefine’s version history to ensure that everyone is using the same cleaning process and has access to the latest changes. This collaborative feature is a big advantage over other tools, which often don’t offer such detailed tracking or easy collaboration, making it harder to maintain consistency or manage multiple revisions.
+[^1]: Ziemann, M., Eren, Y. & El-Osta, A. Gene name errors are widespread in the scientific literature. *Genome Biol* **17**, 177 (2016). <https://doi.org/10.1186/s13059-016-1044-7>
+
+Another key strength of OpenRefine is its ability to track every action you take through its project history feature. All changes in OpenRefine are user-initiated and recorded in a "history" or "recipe," making it easy to review or undo actions. This means you can easily review, reverse, or revisit any step in your data cleaning process. It makes the entire workflow reproducible, as you can apply the same steps to other datasets or go back to previous stages without losing any progress.
+
+What really sets OpenRefine apart, is how it combines this project history capability with version control. This is especially useful when working in teams. As your project evolves, version control allows you to track changes over time, keeping everyone aligned and on the same page. If you’re working with multiple collaborators, you can rely on OpenRefine’s version history to ensure that everyone is using the same cleaning process and has access to the latest changes. This collaborative feature is a big advantage over other tools, which often don’t offer such detailed tracking or easy collaboration, making it harder to maintain consistency or manage multiple revisions.
 
 Additionally, since OpenRefine is open-source, you can create and share custom extensions, further streamlining teamwork. The combination of project history and version control makes OpenRefine particularly powerful for teams, ensuring a smooth, consistent, and transparent workflow, all while reducing the risk of errors. Unlike other data cleaning tools, OpenRefine offers a level of collaboration and organization that helps keep your cleaning process standardized and your team on track.
 
@@ -45,5 +49,5 @@ If you're using the desktop version, double-click on the OpenRefine icon or run 
 ::: {.callout-important collapse="true"}
 ## Starting OpenRefine Straight in Your Browser
 
-If you would like to use another browser instead, start OpenRefine and then point your chosen browser at the home screen: [http://127.0.0.1:3333](http://127.0.0.1:3333).
+If you would like to use another browser instead, start OpenRefine and then point your chosen browser at the home screen: <http://127.0.0.1:3333>.
 :::
