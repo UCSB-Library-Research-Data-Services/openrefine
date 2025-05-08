@@ -198,6 +198,7 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#custom-data-transforms-with-grel" id="toc-custom-data-transforms-with-grel" class="nav-link active" data-scroll-target="#custom-data-transforms-with-grel">Custom Data Transforms with GREL</a></li>
+  <li><a href="#dealing-with-arrays" id="toc-dealing-with-arrays" class="nav-link" data-scroll-target="#dealing-with-arrays">Dealing with Arrays</a></li>
   </ul>
 </nav>
     </div>
@@ -259,8 +260,9 @@ ul.task-list li input[type="checkbox"] {
 <p><img src="images/grel-reuse.png" class="img-fluid" width="458"></p>
 <p>Apparently, there’s no limit to how many are stored, so it may accumulate expressions you didn’t end up using or had to revise. For expressions that worked well, consider starring them to make future reuse easier. However, note that the history is cleared when you upgrade to a new version of OpenRefine. The <em>Help</em> tab is also handy for quick references on how to write expressions.</p>
 </section>
-<section id="dealing-with-arrays" class="level4">
-<h4 class="anchored" data-anchor-id="dealing-with-arrays">Dealing with Arrays</h4>
+</section>
+<section id="dealing-with-arrays" class="level3">
+<h3 class="anchored" data-anchor-id="dealing-with-arrays">Dealing with Arrays</h3>
 <p>Now that we’ve completed a basic custom transformation and gained a better understanding of how GREL works, let’s turn our attention back to the <strong><code>country</code></strong> column. Earlier, we corrected entries where <strong>“USA”</strong> was used instead of <strong>“US”</strong> to ensure that all country codes follow the two-character format defined by the ISO.</p>
 <p>By applying a text facet, we will notice that there are over 1,030 unique values. This high number is due to OpenRefine treating different sequences of multiple countries as distinct entries. Although if we were to check country representation within our dataset, this would be challenging because the country information is currently stored as arrays.</p>
 <p>An ‘Array’ is a data type which can contain a list of values. In OpenRefine an array is represented by the use of square brackets containing a list of values separated by commas.</p>
@@ -339,7 +341,6 @@ Putting everything together
 <p>Thankfully, OpenRefine supports reproducibility by keeping a detailed history of every transformation you apply—making it easy to trace, review, or reapply steps. In the next episode, we’ll explore how to export and share your data cleaning workflow so that anyone can reproduce the exact same process with just a few clicks.</p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
