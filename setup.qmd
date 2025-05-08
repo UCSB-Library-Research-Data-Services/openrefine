@@ -10,7 +10,7 @@ title: "Setup & Installation"
 
 OpenRefine treats all data as plain text by default, meaning it won’t automatically interpret or convert data types unless explicitly instructed to do so. This approach avoids common issues seen in tools like Excel, which auto-converts certain strings—such as gene names like "MARCH1"—into dates, leading to data corruption in scientific research[^1]. By requiring deliberate data type transformations, OpenRefine offers better control to researchers and helps preserve data integrity.
 
-[^1]: Ziemann, M., Eren, Y. & El-Osta, A. Gene name errors are widespread in the scientific literature. *Genome Biol* **17**, 177 (2016). <https://doi.org/10.1186/s13059-016-1044-7>
+[^1]: Ziemann, M., Eren, Y. & El-Osta, A. Gene name errors are widespread in the scientific literature. *Genome Biol* **17**, 177 (2016). [https://doi.org/10.1186/s13059-016-1044-7](https://doi.org/10.1186/s13059-016-1044-7){target="_blank"}
 
 Another key strength of OpenRefine is its ability to track every action you take through its project history feature. All changes in OpenRefine are user-initiated and recorded in a "history" or "recipe," making it easy to review or undo actions. This means you can easily review, reverse, or revisit any step in your data cleaning process. It makes the entire workflow reproducible, as you can apply the same steps to other datasets or go back to previous stages without losing any progress.
 

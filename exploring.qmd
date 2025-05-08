@@ -68,7 +68,7 @@ As you can see, a text facet can come in handy for providing some quick insights
 
 ### Checking for Errors
 
-Let’s now turn our attention to the **classification** column. This column should represent the ratings from [The Classification and Rating Administration (CARA)](https://www.filmratings.com). How many unique values are represented in the dataset? You should find 18 distinct entries—correct? It appears that the original data collector could have enforced validation rules to ensure consistency in this field, but since that wasn’t done, we can use faceted analysis to identify inconsistencies or errors. How many could you identify? Have you noticed the question marks and NAs? What approach would you take to clean and standardize these entries?
+Let’s now turn our attention to the **classification** column. This column should represent the ratings from [The Classification and Rating Administration (CARA)](https://www.filmratings.com){target="_blank"}. How many unique values are represented in the dataset? You should find 18 distinct entries—correct? It appears that the original data collector could have enforced validation rules to ensure consistency in this field, but since that wasn’t done, we can use faceted analysis to identify inconsistencies or errors. How many could you identify? Have you noticed the question marks and NAs? What approach would you take to clean and standardize these entries?
 
 Since those entries represent either non-existent data or uncertainty—and given that we already have many productions with unknown classifications (13,132)—we might consider setting those values to blank as well. To do this, we can first run a text facet and select the entries we want to amend:
 

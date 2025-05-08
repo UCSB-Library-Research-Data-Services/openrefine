@@ -41,7 +41,7 @@ Now that we have a clearer understanding of the data we'll be working with, plea
 
 ![](images/download-icon.png){width="56"}
 
-**FIXME: \[add zenodo link to dataset\]**
+**FIXME: \[add zenodo link to dataset\]{target="_blank"}**
 
 Let's open the file and check how the data looks like. Also, can you spot your favorite movie or TV series on it?
 

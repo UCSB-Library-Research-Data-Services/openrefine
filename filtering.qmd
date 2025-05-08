@@ -60,7 +60,7 @@ If you go back to one of the already sorted columns and select \> `Sort` \> `Rem
 
 Just like in other data tools, **OpenRefine includes a “Find and Replace” feature**. For example, let’s say we’re working with the **`country`** column. Creating a **text facet** on this column might result in **over 1,000 unique entries**—far too many to scan manually for inconsistencies.
 
-Suppose you notice that some values use **"USA"** instead of the expected two-character code **"US"**, based on the [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) standard. In that case, you can use **Find and Replace** to correct these entries and ensure consistency across your dataset.
+Suppose you notice that some values use **"USA"** instead of the expected two-character code **"US"**, based on the [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2){target="_blank"} standard. In that case, you can use **Find and Replace** to correct these entries and ensure consistency across your dataset.
 
 Since the country may be part of a string with other countries we could use the `Edit cells > Replace...`
 

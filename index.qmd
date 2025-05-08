@@ -46,7 +46,7 @@ Without proper planning, cleaning methods can inadvertently remove valuable info
 
 Because data cleaning cannot always be an entirely objective task, Rawson & Muñoz (2016)[^2] caution researchers to prioritize index-making strategies rather than immediately jumping into normalization. In this approach, the first step is to identify the communities in which the data holds meaning, clarify any questions related to the datset, and to explore the concepts that shape and structure the data. Then, have all decisions made along the way documented.
 
-[^2]: Rawson, K., & Muñoz, T. (2016, July 7). Against cleaning. *Curating Menus*. http://www.curatingmenus.org/articles/against-cleaning
+[^2]: Rawson, K., & Muñoz, T. (2016, July 7). Against cleaning. *Curating Menus*. [http://www.curatingmenus.org/articles/against-cleaning](http://www.curatingmenus.org/articles/against-cleaning){target="_blank"}
 
 A common data cleaning mistake is relying too heavily on manual processes, which are not only time-consuming but also highly prone to human error. This is where automation tools come in—streamlining the cleaning process and significantly improving accuracy.
 
@@ -58,7 +58,7 @@ This course introduces data cleaning best practices with the support of **OpenRe
 
 Through hands-on activities we will explore how OpenRefine helps detecting anomalies, streamlines data cleaning, and allows for more consistent and reproducible workflows. By the end of this workshop, you will be equipped with practical skills to tidy and refine tabular datasets, enabling more accurate and meaningful data-driven work in your field.
 
-We also encourage learners to also explore our handouts from our [Data Literacy Series](https://rcd.ucsb.edu/data-literacy-series) with practical recommendations on related topics, including: handling [missing data](https://perma.cc/4ZWA-NSJD), dealing with [encoding issues](https://perma.cc/Q42N-M5YK), keeping [spreadsheets organized](https://perma.cc/5LBN-YQDU) and [control for quality in tabular data](https://perma.cc/MJ2A-N3YQ).
+We also encourage learners to also explore our handouts from our [Data Literacy Series](https://rcd.ucsb.edu/data-literacy-series){target="_blank"} with practical recommendations on related topics, including: handling [missing data](https://perma.cc/4ZWA-NSJD){target="_blank"}, dealing with [encoding issues](https://perma.cc/Q42N-M5YK){target="_blank"}, keeping [spreadsheets organized](https://perma.cc/5LBN-YQDU){target="_blank"} and [control for quality in tabular data](https://perma.cc/MJ2A-N3YQ){target="_blank"}.
 
 ### Learning Goals
 

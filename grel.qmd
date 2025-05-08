@@ -20,7 +20,7 @@ In the Expressions Editor window, you can choose from several supported language
 
 Additional expression languages may be available through extensions. While these languages differ in syntax, they support many of the same variables and functions. For example, the GREL expression `value.split(" ")[1]` is written in Jython as `return value.split(" ")[1]`. But they may also look a lot more different. For example, the GREL function `toUppercase(value)` would be expressed in Clojure as `(clojure.string/upper-case value)`.
 
-We’ll now look at some practical examples that are relevant to our sample dataset. These will give you a sense of what’s possible—but since there’s so much more you can do, we encourage you to explore further using the [Recipe](https://github.com/OpenRefine/OpenRefine/wiki/Recipes) for more detailed information and hands-on examples. It's a great resource to help you experiment further at your own pace.
+We’ll now look at some practical examples that are relevant to our sample dataset. These will give you a sense of what’s possible—but since there’s so much more you can do, we encourage you to explore further using the [Recipe](https://github.com/OpenRefine/OpenRefine/wiki/Recipes){target="_blank"} for more detailed information and hands-on examples. It's a great resource to help you experiment further at your own pace.
 
 ### Custom Data Transforms with GREL
 

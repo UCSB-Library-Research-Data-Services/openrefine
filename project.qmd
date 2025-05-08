@@ -6,7 +6,7 @@ title: "Creating a New Project"
 
 Now that OpenRefine is up and running—and we’ve got our dataset ready—it’s time to create a new project and start exploring what this powerful tool can do.
 
-When you launch OpenRefine by clicking the diamond logo or accessing [http://127.0.0.1:3333](http://127.0.0.1:3333/) you'll presented with a home screen with some options, among which to start a new project. Let's explore some of these options together before proceeding:
+When you launch OpenRefine by clicking the diamond logo or accessing [http://127.0.0.1:3333](http://127.0.0.1:3333/){target="_blank"} you'll presented with a home screen with some options, among which to start a new project. Let's explore some of these options together before proceeding:
 
 ![](images/create-project.png)
 
@@ -18,9 +18,9 @@ Have you noticed the **`Preferences`** link in the lower-left corner? If you cli
 For more info about system preferences: <https://openrefine.org/docs/manual/running#preferences>
 :::
 
-Alright, back to creating a project, OpenRefine allows users to choose files from a local machine by uploading XLS/XLSX, CSV, TSV, TXT, XML, JSON files and more, fetch data directly from a website such as [Electric Vehicle Population Data](https://catalog.data.gov/dataset/electric-vehicle-population-data) from Data.gov, connect it with a database through login and authentication, or paste data directly from clipboard.
+Alright, back to creating a project, OpenRefine allows users to choose files from a local machine by uploading XLS/XLSX, CSV, TSV, TXT, XML, JSON files and more, fetch data directly from a website such as [Electric Vehicle Population Data](https://catalog.data.gov/dataset/electric-vehicle-population-data){target="_blank"} from Data.gov, connect it with a database through login and authentication, or paste data directly from clipboard.
 
-We will be using the first option and select the example dataset. This should prompt an auto preview of the dataset, for a quick inspection of the first rows, and with some configuration and parsing options, including character encoding (see [handout](https://perma.cc/Q42N-M5YK) for more info on this topic). OpenRefine automatically detects the character encoding used in your file.
+We will be using the first option and select the example dataset. This should prompt an auto preview of the dataset, for a quick inspection of the first rows, and with some configuration and parsing options, including character encoding (see [handout](https://perma.cc/Q42N-M5YK){target="_blank"} for more info on this topic). OpenRefine automatically detects the character encoding used in your file.
 
 ![](images/preview-project-02.png)
 
@@ -50,7 +50,7 @@ If you scroll down, you'll see the **Project ID** assigned to your new project i
 
 OpenRefine automatically records all your actions, which are listed in the `Undo/Redo` panel we will be exploring more soon. This includes things like flagging and starring rows. However, it does *not* save facets (which will learn more about), filters, or any visual changes you’ve made—such as the number of visible rows, column sorting, or collapsed columns. A good rule to remember: if it’s not in the Undo/Redo panel, it won’t be saved when you exit the project.
 
-By default, OpenRefine autosaves your project every five minutes. If you'd like you can adjust this setting using the command line and following the instructions laid out [here](https://openrefine.org/docs/manual/running#jvm-preferences).
+By default, OpenRefine autosaves your project every five minutes. If you'd like you can adjust this setting using the command line and following the instructions laid out [here](https://openrefine.org/docs/manual/running#jvm-preferences){target="_blank"}.
 
 While you can't save general view settings, you can save and share your current facets and filters. To do this, click **`Permalink`**. This generates a new URL that reloads the project with your current facets and filters, including specific settings (like sorting by count instead of name). Copy and save that URL to return to the same filtered view later.
 
@@ -72,7 +72,7 @@ You can access the workspace directory by:
 
 -   A file-explorer or finder window will open in your workspace
 
-We will keep the default configuration for now, but you can customize the desired location by following these [instructions](https://openrefine.org/docs/manual/installing#set-where-data-is-stored).
+We will keep the default configuration for now, but you can customize the desired location by following these [instructions](https://openrefine.org/docs/manual/installing#set-where-data-is-stored){target="_blank"}.
 
 ### What Happens to the Original Dataset?
 
