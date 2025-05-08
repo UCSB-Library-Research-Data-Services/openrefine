@@ -6,6 +6,8 @@ In this episode, we will explore how to document and export your data cleaning w
 
 OpenRefine offers powerful features that allow you to capture every step of your data cleaning process in a structured format. You’ll learn how to export this process as a reusable script and share both your cleaned dataset and the workflow that produced it. This ensures that your work can be replicated, audited, or continued by colleagues or future you.
 
+## Exporting & Saving
+
 As previously mentioned you can export your clean dataset or subsets of the cleaned dataset using the `Export` menu and choosing you preferred extension/format. As a reminder the raw data was never touched,
 
 One of OpenRefine’s key strengths is that the raw data remains untouched, while all changes made to the working copy are meticulously tracked—except for modifications to project metadata, such as the project name. By this point, anyone following along should have a fairly extensive list of actions recorded in the `Undo/Redo` panel, beginning from the project's creation.
@@ -16,11 +18,17 @@ Clicking `Extract..` should prompt the extract operating history, which is essen
 
 ![](images/extract-operation.png){width="875"}
 
-You can choose to export specific actions or the entire file. This export is useful not only for reapplying edits to similar datasets, but also for enhancing transparency and reproducibility by clearly documenting the transformation from raw to analysis-ready data. You may reuse operations, by clicking `Apply...` and uploading the file.
+You can choose to export specific actions or the entire file.
+
+## **Ensuring reproducibility in your data cleaning process**
+
+By extracting these set of operations (edits) from one project and you may "reapply" them to another project or even within the same project. This is useful for repeating the same transformations across different datasets or for sharing your workflow with others. 
+
+This export is useful not only for reapplying edits to similar datasets, but also for enhancing transparency and reproducibility by clearly documenting the transformation from raw to analysis-ready data. You may reuse operations, by clicking `Apply...` and uploading the file.
 
 Let's see how does that work? Export the file and save it. Then, go to the `Undo/Redo` panel and go back to the step where the project was created and apply the file with all the actions you have performed. Cool, right?
 
-### Upgrades & Backups
+## Upgrades & Backups
 
 OpenRefine is continuously evolving—bringing new features, performance upgrades, and sometimes changes to how projects are handled. While these updates improve the tool, they may also introduce compatibility issues with older project files.
 
