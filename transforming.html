@@ -277,35 +277,35 @@ ul.task-list li input[type="checkbox"] {
 <td>Key Collision</td>
 <td>Lowercases, removes punctuation, sorts words alphabetically</td>
 <td>General cleanup of similar words</td>
-<td><code>John Smith</code> = <code>Smith John</code></td>
+<td><strong>John Smith = Smith John</strong></td>
 </tr>
 <tr class="even">
 <td><strong>Ngram-Fingerprint</strong></td>
 <td>Key Collision</td>
 <td>Like Fingerprint but uses chunks of letters (n-grams)</td>
 <td>Catching typos and small variations</td>
-<td><code>Jon</code> ≈ <code>John</code></td>
+<td><strong>Jon ≈ John</strong></td>
 </tr>
 <tr class="odd">
 <td><strong>Metaphone3</strong></td>
 <td>Key Collision</td>
 <td>Groups words that <em>sound</em> alike using English phonetics</td>
 <td>Names, brand names</td>
-<td><code>Katherine</code> ≈ <code>Catherine</code></td>
+<td><strong>Katherine ≈ Catherine</strong></td>
 </tr>
 <tr class="even">
 <td><strong>Levenshtein Distance</strong></td>
 <td>Nearest Neighbor</td>
 <td>Counts how many single-character edits are needed to match two strings</td>
 <td>Short strings with typos</td>
-<td><code>Jon</code> ≈ <code>John</code>, <code>color</code> ≈ <code>colour</code></td>
+<td><strong>Jon ≈ John, color ≈ colour</strong></td>
 </tr>
 <tr class="odd">
 <td><strong>PPM (Prediction by Partial Matching)</strong></td>
 <td>Nearest Neighbor</td>
 <td>Uses letter patterns to guess similarity based on character prediction</td>
 <td>Very short strings, abbreviations</td>
-<td><code>NY</code> ≈ <code>New York</code> (sometimes)</td>
+<td><strong>NY ≈ New York</strong> (sometimes)</td>
 </tr>
 </tbody>
 </table>
