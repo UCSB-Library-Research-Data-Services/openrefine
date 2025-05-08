@@ -244,7 +244,37 @@
     "href": "saving.html",
     "title": "Saving & Sharing Things",
     "section": "",
-    "text": "In this episode, we will explore how to document and export your data cleaning workflows in OpenRefine. As seen, as data projects grow more complex, keeping track of each transformation becomes essential—not just for your own reference, but also for collaborating with others and ensuring reproducibility.\nOpenRefine offers powerful features that allow you to capture every step of your data cleaning process in a structured format. You’ll learn how to export this process as a reusable script and share both your cleaned dataset and the workflow that produced it. This ensures that your work can be replicated, audited, or continued by colleagues or future you.\nAs previously mentioned you can export your clean dataset or subsets of the cleaned dataset using the Export menu and choosing you preferred extension/format. As a reminder the raw data was never touched,\nOne of OpenRefine’s key strengths is that the raw data remains untouched, while all changes made to the working copy are meticulously tracked—except for modifications to project metadata, such as the project name. By this point, anyone following along should have a fairly extensive list of actions recorded in the Undo/Redo panel, beginning from the project’s creation.\n\nClicking Extract.. should prompt the extract operating history, which is essentially a compilation of all your cleaning actions in a JSON (JavaScript Object Notation) file, which stores data in a structured, human-readable text format using key-value pairs and arrays.\n\nYou can choose to export specific actions or the entire file. This export is useful not only for reapplying edits to similar datasets, but also for enhancing transparency and reproducibility by clearly documenting the transformation from raw to analysis-ready data. You may reuse operations, by clicking Apply... and uploading the file.\nLet’s see how does that work? Export the file and save it. Then, go to the Undo/Redo panel and go back to the step where the project was created and apply the file with all the actions you have performed. Cool, right?\n\nUpgrades & Backups\nOpenRefine is continuously evolving—bringing new features, performance upgrades, and sometimes changes to how projects are handled. While these updates improve the tool, they may also introduce compatibility issues with older project files.\nIf you’re upgrading from an older version of OpenRefine and already have projects saved on your computer, it’s strongly recommended that you back them up before installing the new version.\nDuring these transitions, to protect your work, we advise you to first locate your workspace directory (this is where all your project files are stored). Then, copy everything in that folder and paste it into a separate backup location on your computer. This simple step ensures that your data remains safe, no matter what changes come with the upgrade.",
+    "text": "In this episode, we will explore how to document and export your data cleaning workflows in OpenRefine. As seen, as data projects grow more complex, keeping track of each transformation becomes essential—not just for your own reference, but also for collaborating with others and ensuring reproducibility.\nOpenRefine offers powerful features that allow you to capture every step of your data cleaning process in a structured format. You’ll learn how to export this process as a reusable script and share both your cleaned dataset and the workflow that produced it. This ensures that your work can be replicated, audited, or continued by colleagues or future you.",
+    "crumbs": [
+      "Saving & Sharing Things"
+    ]
+  },
+  {
+    "objectID": "saving.html#exporting-saving",
+    "href": "saving.html#exporting-saving",
+    "title": "Saving & Sharing Things",
+    "section": "Exporting & Saving",
+    "text": "Exporting & Saving\nAs previously mentioned you can export your clean dataset or subsets of the cleaned dataset using the Export menu and choosing you preferred extension/format. As a reminder the raw data was never touched,\nOne of OpenRefine’s key strengths is that the raw data remains untouched, while all changes made to the working copy are meticulously tracked—except for modifications to project metadata, such as the project name. By this point, anyone following along should have a fairly extensive list of actions recorded in the Undo/Redo panel, beginning from the project’s creation.\n\nClicking Extract.. should prompt the extract operating history, which is essentially a compilation of all your cleaning actions in a JSON (JavaScript Object Notation) file, which stores data in a structured, human-readable text format using key-value pairs and arrays.\n\nYou can choose to export specific actions or the entire file.",
+    "crumbs": [
+      "Saving & Sharing Things"
+    ]
+  },
+  {
+    "objectID": "saving.html#ensuring-reproducibility-in-your-data-cleaning-process",
+    "href": "saving.html#ensuring-reproducibility-in-your-data-cleaning-process",
+    "title": "Saving & Sharing Things",
+    "section": "Ensuring reproducibility in your data cleaning process",
+    "text": "Ensuring reproducibility in your data cleaning process\nBy extracting these set of operations (edits) from one project and you may “reapply” them to another project or even within the same project. This is useful for repeating the same transformations across different datasets or for sharing your workflow with others. \nThis export is useful not only for reapplying edits to similar datasets, but also for enhancing transparency and reproducibility by clearly documenting the transformation from raw to analysis-ready data. You may reuse operations, by clicking Apply... and uploading the file.\nLet’s see how does that work? Export the file and save it. Then, go to the Undo/Redo panel and go back to the step where the project was created and apply the file with all the actions you have performed. Cool, right?",
+    "crumbs": [
+      "Saving & Sharing Things"
+    ]
+  },
+  {
+    "objectID": "saving.html#upgrades-backups",
+    "href": "saving.html#upgrades-backups",
+    "title": "Saving & Sharing Things",
+    "section": "Upgrades & Backups",
+    "text": "Upgrades & Backups\nOpenRefine is continuously evolving—bringing new features, performance upgrades, and sometimes changes to how projects are handled. While these updates improve the tool, they may also introduce compatibility issues with older project files.\nIf you’re upgrading from an older version of OpenRefine and already have projects saved on your computer, it’s strongly recommended that you back them up before installing the new version.\nDuring these transitions, to protect your work, we advise you to first locate your workspace directory (this is where all your project files are stored). Then, copy everything in that folder and paste it into a separate backup location on your computer. This simple step ensures that your data remains safe, no matter what changes come with the upgrade.",
     "crumbs": [
       "Saving & Sharing Things"
     ]
