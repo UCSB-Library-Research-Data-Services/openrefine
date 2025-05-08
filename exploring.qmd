@@ -34,7 +34,7 @@ To perform this check, we can create a text facet for the **ID** **column**. But
 
 ![](images/ids-facetting.png)
 
-Manually inspecting all the entries to check for duplicates would take a considerable amount of time. A simple workaround is to create a new column that combines the values from the `ID` and `Streaming` columns. Then, by running a **Text facet** and sorting by count, we can easily spot any duplicates:
+Manually inspecting all the entries to check for duplicates would take a considerable amount of time. A simple workaround is to create a new column that combines the values from the **id** and **streaming** columns. Then, by running a **Text facet** and sorting by count, we can easily spot any duplicates:
 
 First we add a new column based on the existing one...
 
@@ -78,9 +78,9 @@ Now that we have included those six choices and eight entries, we can apply a \`
 
 ![](images/amend-null.png)
 
-Now, let's run another text facet for the same column and check how many choices we have. But wait, have you noticed the empty string option? An empty string will work the same as null for most purposes. Can you guess when it will not be the case? An empty string (`""`) will not behave the same as null when you use functions or filters that specifically distinguish between null and empty. Setting it as `null` represent "no data", making it more explicit the data is missing, unknown or not applicable. But let's not get too sidetracked. We will cover more about transformations in the next episodes.
+Now, let's run another text facet for the same column and check how many choices we have. But wait, have you noticed the empty string option? An empty string will work the same as null for most purposes. Can you guess when it will not be the case? An **empty string ("")** will not behave the same as null when you use functions or filters that specifically distinguish between null and empty. Setting it as **null** represent "no data", making it more explicit the data is missing, unknown or not applicable. But let's not get too sidetracked. We will cover more about transformations in the next episodes.
 
-Now we will use faceting to look for potential errors in data entry in the **streaming** column. First, Scroll over to the **streaming** column and then, click the down arrow and choose `Facet` \> `Text facet`.
+Now we will use faceting to look for potential errors in data entry in the **streaming** column. First, scroll over to the **streaming** column and then, click the down arrow and choose `Facet` \> `Text facet`.
 
 ![](images/text-facet-menu.png)
 
@@ -124,14 +124,14 @@ Only observations that include only numerals (0-9) can be transformed to numbers
 
 For columns with numeric values we can convert it using the **`Edit cells > Common transforms`**. In this section, we’ll experiment with converting columns to numbers and explore the additional features and functionality this unlocks.
 
-Sometimes there are non-number values or blanks in a column which may represent errors in data entry and we want to find them. We can do that with a `Numeric facet`. So if you try to create a numeric facet for the column **release_year**. The facet will be empty because OpenRefine sees those values as text strings.
+Sometimes there are non-number values or blanks in a column which may represent errors in data entry and we want to find them. We can do that with a **numeric facet**. So if you try to create a numeric facet for the column **release_year**. The facet will be empty because OpenRefine sees those values as text strings.
 
 To transform cells into numbers, click the down arrow for that column, then `Edit cells` \> `Common transforms…` \> `To number`. You will notice the values will change from left-justified to right-justified, and black to green color.
 
 ::: {.callout-note collapse="true" icon="false"}
 ## 🧠 Your Turn! Applying Numeric Facet
 
-The dataset included other numeric columns, but let's focus on `imdb_score` and `tmdb_score`. How does changing the format for these two column change their faceting display?
+The dataset included other numeric columns, but let's focus on **imdb_score** and **tmdb_score**. How does changing the format for these two column change their faceting display?
 
 ::: {.callout-note collapse="true" icon="false"}
 ## 🔑 Answer Key
