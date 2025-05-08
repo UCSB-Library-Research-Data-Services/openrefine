@@ -260,11 +260,11 @@
     ]
   },
   {
-    "objectID": "saving.html#ensuring-reproducibility-in-your-data-cleaning-process",
-    "href": "saving.html#ensuring-reproducibility-in-your-data-cleaning-process",
+    "objectID": "saving.html#supporting-reproducibility",
+    "href": "saving.html#supporting-reproducibility",
     "title": "Saving & Sharing Things",
-    "section": "Ensuring reproducibility in your data cleaning process",
-    "text": "Ensuring reproducibility in your data cleaning process\nBy extracting these set of operations (edits) from one project and you may “reapply” them to another project or even within the same project. This is useful for repeating the same transformations across different datasets or for sharing your workflow with others. \nThis export is useful not only for reapplying edits to similar datasets, but also for enhancing transparency and reproducibility by clearly documenting the transformation from raw to analysis-ready data. You may reuse operations, by clicking Apply... and uploading the file.\nLet’s see how does that work? Export the file and save it. Then, go to the Undo/Redo panel and go back to the step where the project was created and apply the file with all the actions you have performed. Cool, right?",
+    "section": "Supporting Reproducibility",
+    "text": "Supporting Reproducibility\nBy extracting this set of operations (edits) from a single project, you make your data cleaning process more transparent and reproducible. These operations can then be reapplied to other projects—or reused within the same project—enabling consistent transformations across datasets. This approach also makes it easier to share your workflow with others or revisit it yourself in the future.\nThis export is useful not only for reapplying edits to similar datasets, but also for enhancing transparency and reproducibility by clearly documenting the transformation from raw to analysis-ready data. You may reuse operations, by clicking Apply... and uploading the file.\nLet’s see how does that work? Export the file and save it. Then, go to the Undo/Redo panel and go back to the step where the project was created and apply the file with all the actions you have performed. Cool, right?",
     "crumbs": [
       "Saving & Sharing Things"
     ]
