@@ -4,7 +4,7 @@ title: "Our Running Example"
 
 ## Streamed Movies & TV Shows Dataset
 
-Over the past decade, streaming services have rapidly transformed the way people consume entertainment, rising to dominate the media landscape. As more people turn to digital platforms for personalized viewing experiences, streaming services continue to redefine modern entertainment consumption. What was the last movie or show you have watched?
+Over the past decade, streaming services have rapidly transformed the way people consume entertainment, rising to dominate the media landscape. As more people turn to digital platforms for personalized viewing experiences, streaming services continue to redefine modern entertainment consumption. Are you into streaming? What was the most recent movie or TV show you watched?
 
 ![](images/streaming-services.png){width="370"}
 
@@ -12,7 +12,7 @@ This workshop utilizes the **streaming-master-messy** comma-separated value (CSV
 
 [^1]: Henrique, D. (2020). *A simple movie & TV show recommendation system*. Kaggle. <https://www.kaggle.com/code/dgoenrique/a-simple-movie-tv-show-recommendation-system?select=credits.csv>
 
-We have merged six `titles.csv` files—each representing one of the streaming services featured in this project (Amazon Prime Video, Apple TV+, Disney+, HBO Max, Netflix, and Paramount)—into a single master spreadsheet.
+For this project, we have merged six `titles.csv` files—each representing one of the streaming services featured in this project (Amazon Prime Video, Apple TV+, Disney+, HBO Max, Netflix, and Paramount)—into a single master spreadsheet.
 
 The dataset contains 25,223 rows with movies and TV series titles along with the following variables as described in the data dictionary:
 
@@ -34,7 +34,6 @@ The dataset contains 25,223 rows with movies and TV series titles along with the
 -   imdb_votes: Votes on the Internet Movie Database (IMDB).
 -   tmdb_popularity: Votes on The Movie Database (TMDB).
 -   tmdb_score: Score on on The Movie Database TMDB.
-
 
 ## Downloading the Dataset
 
