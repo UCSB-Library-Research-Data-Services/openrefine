@@ -12,7 +12,7 @@ This workshop utilizes a comma-separated value (CSV) file which is derived from 
 
 [^1]: Henrique, D. (2020). *A simple movie & TV show recommendation system*. Kaggle. <https://www.kaggle.com/code/dgoenrique/a-simple-movie-tv-show-recommendation-system?select=credits.csv>
 
-For this project, we have merged six `titles.csv` files—each representing one of the streaming services featured in this project (Amazon Prime Video, Apple TV+, Disney+, HBO Max, Netflix, and Paramount)—into a single master spreadsheet.
+For this project, we have merged six *titles.csv* files—each representing one of the streaming services featured in this project (Amazon Prime Video, Apple TV+, Disney+, HBO Max, Netflix, and Paramount)—into a single master spreadsheet.
 
 The dataset contains 25,223 rows with movies and TV series titles along with the following variables as described in the data dictionary:
 
