@@ -16,12 +16,12 @@ The project bar is located at the very top of the screen. It includes the OpenRe
 
 To create a permalink, click on it and OpenRefine will reload the project with a new URL in the address bar. That URL includes all your current facets, filters, and their specific settings (like sorting order). You can then copy that URL and save or share it with collaborators. Essentially, permalinks are especially useful for collaboration, documentation, or revisiting a specific view of your data. When shared, they allow others to see the exact same project state you were working with—including filtered rows, selected facets, and how the data was sorted. This makes it easier to troubleshoot issues, review changes, or discuss findings with teammates without needing to replicate the setup manually.
 
-It is important to note, however that the **permalink does not save your data or transformations**—it only saves how you're currently viewing the data. All transformations are still stored separately in the project’s History.
+It is important to note, however that the **permalink does not save your data or transformations—it only saves how you're currently viewing the data.** **All transformations are still stored separately in the project’s History.**
 
 You can return to the home screen at any time by clicking the OpenRefine logo. To open another project in a new tab or window, right-click the logo and select “Open in a new tab.” Keep in mind that closing your current project will reset your facets and view settings, though all data transformations will remain saved in the project’s History.
 
 ::: callout-warning
-## Refrain from Using the Browser's Back Button
+## Attention!
 
 Don’t use your browser’s “back” button — it may close your project and erase your facets and view settings.
 :::
