@@ -10,7 +10,7 @@ Now, let’s dive into one of the most powerful and defining features of OpenRef
 
 One type of facet is called a ‘Text facet’. This groups all the identical text values in a column and lists each value with the number of records it appears in. The facet information always appears in the left hand panel in the OpenRefine interface.
 
-After applying a text facet to the **title** column, you'll notice that the number of unique choices differs from the total number of rows. This happens because a single title may appear across multiple streaming platforms, and also because different productions can share the same name. Let’s sort the facet by count to explore how often titles like **Cinderella** appear. Just a heads-up: we don’t have any duplicate title entries to clean up in this dataset.
+After applying a text facet to the **title** column, you'll notice that the number of unique choices differs from the total number of rows. This happens because a single title may appear across multiple streaming platforms, and also because different productions can share the same name. Let’s **sort the facet by count** to explore how often titles like **Cinderella** appear.
 
 ::: columns
 ::: {.column width="50%"}
@@ -21,6 +21,46 @@ After applying a text facet to the **title** column, you'll notice that the numb
 ![](images/title-facet-count.png)
 :::
 :::
+
+"Five times, right? Let's click `Include` to review the items and check for any duplicates.
+
+![](images/title-count-cinderella.png)
+
+You’ll notice that each entry corresponds to a unique production, often from a different year or with a distinct plot, which is why they each have their own specific ID. However, it's important to note that the same production might appear on multiple streaming services, sharing the same ID. While we don’t have duplicate entries within a single streaming service, we do need to check for cases where the same production appears under different services with the same ID.
+
+To perform this check, we can create a text facet for the **ID** **column**. But before proceeding, we should exclude any values already filtered for 'Cinderella'. If we don’t do this, the new facet will only apply to the selected rows and might not cover all instances of a production across streaming services.
+
+![](images/ids-facetting.png)
+
+Manually inspecting all the entries to check for duplicates would take a considerable amount of time. A simple workaround is to create a new column that combines the values from the `ID` and `Streaming` columns. Then, by running a **Text facet** and sorting by count, we can easily spot any duplicates:
+
+First we add a new column based on the existing one...
+
+![](images/add-column.png)
+
+We will give it a name. Let's say **id\|streaming**
+
+![](images/naming-newcolumn.png)
+
+And then, we ask to join the data from two columns into the new column...
+
+![](images/join-columns1.png){width="2390"}
+
+And choose the columns we want to join and enter a separator (here we are using the pipe)...
+
+![](images/join-columns2.png)
+
+By running a text facet on this new column and sorting by count, we can quickly confirm whether the IDs that appear more than once are indeed associated with different streaming services.
+
+![](images/newcolumn-facet.png)
+
+After reviewing the results, we can choose to delete this temporary column or even consider assigning a unique record ID to each row. For now, let's keep things simple and **undo the last few actions**.
+
+Wait—have you noticed the yellow pop-up banner in your project bar?
+
+![](images/banner-transforms.png)
+
+This warning shows how many transformations were applied and even gives you a preview of what the equivalent expression for those actions would look like. We'll explore these expressions and how to use them more effectively in future episodes.
 
 As you can see, a text facet can come in handy for providing some quick insights into patterns, and spotting potential inconsistencies or duplicates across your dataset.
 

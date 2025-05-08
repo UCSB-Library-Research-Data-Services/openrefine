@@ -6,7 +6,7 @@ title: "Setup & Installation"
 
 ## Why OpenRefine?
 
-[OpenRefine](https://openrefine.org) is a powerful open-source multiplatform and free data cleaning and transformation tool. It helps users explore, clean, and refine data, making it easier to analyze and prepare for further use with no coding skills required.
+[OpenRefine](https://openrefine.org) is a powerful open-source multi-platform and free data cleaning and transformation tool. It helps users explore, clean, and refine data, making it easier to analyze and prepare for further use with no coding skills required.
 
 OpenRefine treats all data as plain text by default, meaning it won’t automatically interpret or convert data types unless explicitly instructed to do so. This approach avoids common issues seen in tools like Excel, which auto-converts certain strings—such as gene names like "MARCH1"—into dates, leading to data corruption in scientific research[^1]. By requiring deliberate data type transformations, OpenRefine offers better control to researchers and helps preserve data integrity.
 
