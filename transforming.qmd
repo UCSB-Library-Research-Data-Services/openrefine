@@ -36,13 +36,13 @@ Think of it like checking each pair of values closely and asking, "How different
 
 ### Most Commonly Used OpenRefine Clustering Methods
 
-| **Method**                               | Category         | **Description**                                                        | **Good For**                        | **Example**                        |
+| **Method**                               | Category         | **Description**                                                        | **Good For**                        | **Example**                    |
 |---------------|---------------|---------------|---------------|---------------|
-| **Fingerprint**                          | Key Collision    | Lowercases, removes punctuation, sorts words alphabetically            | General cleanup of similar words    | `John Smith` = `Smith John`        |
-| **Ngram-Fingerprint**                    | Key Collision    | Like Fingerprint but uses chunks of letters (n-grams)                  | Catching typos and small variations | `Jon` ≈ `John`                     |
-| **Metaphone3**                           | Key Collision    | Groups words that *sound* alike using English phonetics                | Names, brand names                  | `Katherine` ≈ `Catherine`          |
-| **Levenshtein Distance**                 | Nearest Neighbor | Counts how many single-character edits are needed to match two strings | Short strings with typos            | `Jon` ≈ `John`, `color` ≈ `colour` |
-| **PPM (Prediction by Partial Matching)** | Nearest Neighbor | Uses letter patterns to guess similarity based on character prediction | Very short strings, abbreviations   | `NY` ≈ `New York` (sometimes)      |
+| **Fingerprint**                          | Key Collision    | Lowercases, removes punctuation, sorts words alphabetically            | General cleanup of similar words    | **John Smith = Smith John**    |
+| **Ngram-Fingerprint**                    | Key Collision    | Like Fingerprint but uses chunks of letters (n-grams)                  | Catching typos and small variations | **Jon ≈ John**                 |
+| **Metaphone3**                           | Key Collision    | Groups words that *sound* alike using English phonetics                | Names, brand names                  | **Katherine ≈ Catherine**      |
+| **Levenshtein Distance**                 | Nearest Neighbor | Counts how many single-character edits are needed to match two strings | Short strings with typos            | **Jon ≈ John, color ≈ colour** |
+| **PPM (Prediction by Partial Matching)** | Nearest Neighbor | Uses letter patterns to guess similarity based on character prediction | Very short strings, abbreviations   | **NY ≈ New York** (sometimes)  |
 
 In the facet we have open for the column streaming, click `Cluster` to check available options. It should prompt the following:
 
