@@ -8,9 +8,9 @@ In OpenRefine, expressions can be used in various areas to enhance data cleanup 
 
 ***Facets:*** `Custom text facet`, `Custom numeric facet`, and `Customized facets`
 
-***Edit Cells:*** `Transform`, `Split multi-valued cells,` and `Join multi-valued cells.`
+***Edit Cells:*** `Transform`, `Split multi-valued cells`, and `Join multi-valued cells.`
 
-***Edit Column:*** `Split, Join`, `Add column based on this column`, `and Add column by fetching URLs`.
+***Edit Column:*** `Split, Join`, `Add column based on this column`, and `Add column by fetching URLs`.
 
 Any of these options should prompt the Expressions Editor window as shown below:
 
