@@ -51,7 +51,7 @@ By default, OpenRefine autosaves your project every five minutes. If you'd like 
 
 While you can't save general view settings, you can save and share your current facets and filters. To do this, click **`Permalink`**. This generates a new URL that reloads the project with your current facets and filters, including specific settings (like sorting by count instead of name). Copy and save that URL to return to the same filtered view later.
 
-### Where are projects stored locally?
+### Where are Projects Stored?
 
 All of your raw project files are stored in your OpenRefine *work directory*. Each file is named using the unique `Project ID` assigned by OpenRefine. You can find this ID by going to the `Open Project` screen and clicking the **About** link next to the project. Let's take a moment to check where your files are.
 
@@ -71,6 +71,6 @@ You can access the workspace directory by:
 
 We will keep the default configuration for now, but you can customize the desired location by following these [instructions](https://openrefine.org/docs/manual/installing#set-where-data-is-stored).
 
-### What happens to the original dataset?
+### What Happens to the Original Dataset?
 
 OpenRefine gives researchers piece of mind by following a key best practice in data management: always preserve an untouched version of your original dataset. Why? Because having an unaltered copy ensures you can always return to the source if something goes wrong, verify your changes, or reprocess the data with a different approach—without risking data loss or corruption.
