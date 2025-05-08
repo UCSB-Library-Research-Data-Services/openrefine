@@ -225,25 +225,9 @@ ul.task-list li input[type="checkbox"] {
 
 <p>Now that we’re familiar with common transformations using the menu’s preset options, let’s take a step further by exploring how to customize transformations with more advanced features.</p>
 <p>In OpenRefine, expressions can be used in various areas to enhance data cleanup and transformation. You can apply expressions in the following functions:</p>
-<p><em>Facets:</em></p>
-<ul>
-<li><p>Custom text facet</p></li>
-<li><p>Custom numeric facet</p></li>
-<li><p>Customized facets (click “Change” after creating them to open the expressions window)</p></li>
-</ul>
-<p><em>Edit Cells:</em></p>
-<ul>
-<li><p>Transform</p></li>
-<li><p>Split multi-valued cells</p></li>
-<li><p>Join multi-valued cells</p></li>
-</ul>
-<p><em>Edit Column:</em></p>
-<ul>
-<li><p>Split</p></li>
-<li><p>Join</p></li>
-<li><p>Add column based on this column</p></li>
-<li><p>Add column by fetching URLs</p></li>
-</ul>
+<p><strong><em>Facets:</em></strong> <code>Custom text facet</code>, <code>Custom numeric facet</code>, and <code>Customized facets</code></p>
+<p><strong><em>Edit Cells:</em></strong> <code>Transform</code>, <code>Split multi-valued cells,</code> and <code>Join multi-valued cells.</code></p>
+<p><strong><em>Edit Column:</em></strong> <code>Split, Join</code>, <code>Add column based on this column</code>, <code>and Add column by fetching URLs</code>.</p>
 <p>Any of these options should prompt the Expressions Editor window as shown below:</p>
 <p><img src="images/expression-editor.png" class="img-fluid" width="448"></p>
 <p>In the Expressions Editor window, you can choose from several supported languages. By default, it uses GREL (General Refine Expression Language), OpenRefine also supports Clojure and Jython, these lasts represent Lisp and Python implementations for Java, which makes sense considering OpenRefine is java-based application.</p>
@@ -251,13 +235,13 @@ ul.task-list li input[type="checkbox"] {
 <p>We’ll now look at some practical examples that are relevant to our sample dataset. These will give you a sense of what’s possible—but since there’s so much more you can do, we encourage you to explore further using the <a href="https://github.com/OpenRefine/OpenRefine/wiki/Recipes">Recipe</a> for more detailed information and hands-on examples. It’s a great resource to help you experiment further at your own pace.</p>
 <section id="custom-data-transforms-with-grel" class="level3">
 <h3 class="anchored" data-anchor-id="custom-data-transforms-with-grel">Custom Data Transforms with GREL</h3>
-<p>Let’s start by focusing on the <code>imdb_score</code> and <code>tmdb_score</code> columns. These columns contain floating-point numbers, right? To confirm, we can run a text facet to eyeball those values. As we examine the values, we’ll notice that tmdb scores don’t follow the one decimal format as the imdb. in the number of decimal places. You might be thinking, <em>“This would be such an easy fix in Excel—there’s literally a button for it on the toolbar. Why bother using OpenRefine for that?”</em></p>
-<p>That’s a fair point—Excel does make it easy to change how numbers <em>look</em> by formatting decimal places. But here’s the catch: Excel typically changes the <strong>display</strong> of the number, not the actual <strong>underlying value</strong>. So a number like <code>7.456</code> may <em>appear</em> as <code>7.5</code>, but it’s still stored as <code>7.456</code>, which can cause inconsistencies in downstream processes like sorting, filtering, or exporting.</p>
+<p>Let’s start by focusing on the <strong>imdb_score</strong> and <strong>tmdb_score</strong> columns. These columns contain floating-point numbers, right? To confirm, we can run a text facet to eyeball those values. As we examine the values, we’ll notice that tmdb scores don’t follow the one decimal format as the imdb. in the number of decimal places. You might be thinking, <em>“This would be such an easy fix in Excel—there’s literally a button for it on the toolbar. Why bother using OpenRefine for that?”</em></p>
+<p>That’s a fair point—Excel does make it easy to change how numbers <em>look</em> by formatting decimal places. But here’s the catch: Excel typically changes the <strong>display</strong> of the number, not the actual <strong>underlying value</strong>. So a number like <strong>7.456</strong> may <em>appear</em> as <strong>7.5</strong>, but it’s still stored as <strong>7.456</strong>, which can cause inconsistencies in downstream processes like sorting, filtering, or exporting.</p>
 <p>OpenRefine, on the other hand, lets you transform the actual data. You can standardize the number of decimal places across all values using expressions in GREL. That way, you’re not just changing how the data looks—you’re ensuring consistency at the data level, which is critical for clean, reliable datasets.</p>
 <p>Also, OpenRefine is designed for handling large datasets with repeatable, auditable transformations. So once you clean up one column, you can apply the same steps to others, or even to other projects. That’s something Excel just isn’t built for.</p>
 <section id="adjusting-decimal-points" class="level4">
 <h4 class="anchored" data-anchor-id="adjusting-decimal-points">Adjusting Decimal Points</h4>
-<p>In order to adjust tmdb scores values, we will need to use an expression. Can you guess which one?</p>
+<p>In order to adjust <strong>tmdb scores</strong> values, we will need to use an expression. Can you guess which one?</p>
 <p>Let’s try <code>round(value * 10) / 10.0</code> which will essentially round the value to the nearest integer and then take this whole number and shift the decimal point back. Apply that, then check how many cells were modified. But wait…have you remembered to convert the values to numbers? That is a key step, since the round function only applies to numbers!</p>
 <p>Before applying the expression OpenRefine gives you a hint in case there are any syntax errors and how values will look like if you proceed. You may also choose the behavior in case some rows</p>
 <p><img src="images/expression-round.png" class="img-fluid" width="446"></p>
