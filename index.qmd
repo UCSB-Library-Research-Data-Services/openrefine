@@ -42,13 +42,13 @@ Source: UCSB Library Data Literacy Series. Click to expand: ([perma.cc/HE29-3QVH
 
 Effective data cleaning begins with thorough assessment, preparation and planning. By identifying potential issues, setting clear protocols, and ensuring reproducibility, researchers can maximize the value of their data while maintaining accuracy, compliance, and efficiency.
 
-Without proper planning, aggressive cleaning methods can inadvertently remove valuable information. Establishing clear criteria for data retention, transformation, and exclusion helps maintain the dataset's integrity while eliminating irrelevant or misleading entries.
+Without proper planning, cleaning methods can inadvertently remove valuable information. Establishing clear criteria for data retention, transformation, and exclusion helps maintain the dataset's integrity while eliminating irrelevant or misleading entries.
 
 Because data cleaning cannot always be an entirely objective task, Rawson & Muñoz (2016)[^2] caution researchers to prioritize index-making strategies rather than immediately jumping into normalization. In this approach, the first step is to identify the communities in which the data holds meaning, clarify any questions related to the datset, and to explore the concepts that shape and structure the data. Then, have all decisions made along the way documented.
 
 [^2]: Rawson, K., & Muñoz, T. (2016, July 7). Against cleaning. *Curating Menus*. http://www.curatingmenus.org/articles/against-cleaning
 
-A common data cleaning mistake is relying too heavily on manual processes and documentation, which are not only time-consuming but also highly prone to human error. This is where automation tools come in—streamlining the cleaning process and significantly improving accuracy.
+A common data cleaning mistake is relying too heavily on manual processes, which are not only time-consuming but also highly prone to human error. This is where automation tools come in—streamlining the cleaning process and significantly improving accuracy.
 
 While leveraging programmatic techniques, data cleaning can be more efficient, scalable, and reproducible, especially when working with large datasets. The good news is that non-coders can also take advantage of tools to support a more reproducible data cleaning workflow without losing track of changes and required transformations along the way.
 
@@ -62,11 +62,11 @@ We also encourage learners to also explore our handouts from our [Data Literacy 
 
 ### Learning Goals
 
-In this hands-on workshop, you'll learn how to efficiently clean, transform, and structure messy spreadsheets using OpenRefine, a powerful open-source tool for data wrangling. Whether you're tackling inconsistencies, duplicates, or complex formatting challenges, OpenRefine enables you to automate and streamline the process, ensuring greater accuracy and consistency in your datasets.
+In this lesson, you'll learn how to efficiently clean, transform, and structure messy spreadsheets using OpenRefine, a powerful open-source tool for data wrangling. Whether you're tackling inconsistencies, duplicates, or complex formatting challenges, OpenRefine enables you to automate and streamline the process, ensuring greater accuracy and consistency in your datasets.
 
 Throughout this session, we will explore how to:
 
--   Analyze and diagnose data issues using facets, clustering, and structured views to identify inconsistencies.
+-   Inspect data issues using facets, clustering, and structured views to identify inconsistencies.
 -   Filter and refine data by removing irrelevant observations and keeping only records that meet specific criteria.
 -   Standardize and reconcile values to maintain consistent spelling and formatting across entries, leveraging OpenRefine’s clustering and reconciliation features.
 -   Transform and manipulate data using built-in transformations and the General Refine Expression Language (GREL) for advanced modifications.
