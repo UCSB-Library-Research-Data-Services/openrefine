@@ -8,7 +8,7 @@ Over the past decade, streaming services have rapidly transformed the way people
 
 ![](images/streaming-services.png){width="370"}
 
-This workshop utilizes the **streaming-master-messy** comma-separated value (CSV) file which is derived from the movies and TV shows featured by major streaming services and distributed in Kaggle Project under a CC0 Public License[^1].
+This workshop utilizes a comma-separated value (CSV) file which is derived from the movies and TV shows featured by major streaming services and distributed in Kaggle Project under a CC0 Public License[^1].
 
 [^1]: Henrique, D. (2020). *A simple movie & TV show recommendation system*. Kaggle. <https://www.kaggle.com/code/dgoenrique/a-simple-movie-tv-show-recommendation-system?select=credits.csv>
 
