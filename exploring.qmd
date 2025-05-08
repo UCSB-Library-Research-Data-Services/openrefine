@@ -28,6 +28,8 @@ After applying a text facet to the **title** column, you'll notice that the numb
 
 You’ll notice that each entry corresponds to a unique production, often from a different year or with a distinct plot, which is why they each have their own specific ID. However, it's important to note that the same production might appear on multiple streaming services, sharing the same ID. While we don’t have duplicate entries within a single streaming service, we do need to check for cases where the same production appears under different services with the same ID.
 
+### Checking for Duplicates
+
 To perform this check, we can create a text facet for the **ID** **column**. But before proceeding, we should exclude any values already filtered for 'Cinderella'. If we don’t do this, the new facet will only apply to the selected rows and might not cover all instances of a production across streaming services.
 
 ![](images/ids-facetting.png)
@@ -64,7 +66,7 @@ This warning shows how many transformations were applied and even gives you a pr
 
 As you can see, a text facet can come in handy for providing some quick insights into patterns, and spotting potential inconsistencies or duplicates across your dataset.
 
-### Checking For Errors
+### Checking for Errors
 
 Let’s now turn our attention to the **classification** column. This column should represent the ratings from [The Classification and Rating Administration (CARA)](https://www.filmratings.com). How many unique values are represented in the dataset? You should find 18 distinct entries—correct? It appears that the original data collector could have enforced validation rules to ensure consistency in this field, but since that wasn’t done, we can use faceted analysis to identify inconsistencies or errors. How many could you identify? Have you noticed the question marks and NAs? What approach would you take to clean and standardize these entries?
 
