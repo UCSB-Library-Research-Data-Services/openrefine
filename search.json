@@ -80,11 +80,11 @@
     ]
   },
   {
-    "objectID": "exploring.html#facets-for-subsetting-working-dataset",
-    "href": "exploring.html#facets-for-subsetting-working-dataset",
+    "objectID": "exploring.html#subsetting-working-dataset",
+    "href": "exploring.html#subsetting-working-dataset",
     "title": "Exploring Data Types & Facets",
-    "section": "Facets for Subsetting Working Dataset",
-    "text": "Facets for Subsetting Working Dataset\nFacets can be also very handy to subset the dataset and make it more easily manageable. Let’s say you want to focus only on the shows for a while, or even export this subset. How would you do that? You can perform a text facet for the column type and select show, you will notice the number of matching rows in the grid header will change accordingly. From now on, you will be only working with those rows, unless you click revert or close the facet panel.\nIf you want to export that subset of shows click export on the right side of the project bar and select your preferred format. As a reminder, the permalink will save all active facets for your project!",
+    "section": "Subsetting Working Dataset",
+    "text": "Subsetting Working Dataset\nFacets can be also very handy to subset the dataset and make it more easily manageable. Let’s say you want to focus only on the TV shows, or even export this subset. How would you do that?\nYou can perform a text facet for the column type and select show, you will notice the number of matching rows in the grid header will change accordingly. From now on, you will be only working with those rows, unless you click revert or close the facet panel.\nIf you want to export that subset of shows click export on the right side of the project bar and select your preferred format. As a reminder, the permalink will save all active facets for your project!",
     "crumbs": [
       "Exploring Data Types & Facets"
     ]
