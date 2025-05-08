@@ -18,7 +18,7 @@ What really sets OpenRefine apart, is how it combines this project history capab
 
 Additionally, since OpenRefine is open-source, you can create and share custom extensions, further streamlining teamwork. The combination of project history and version control makes OpenRefine particularly powerful for teams, ensuring a smooth, consistent, and transparent workflow, all while reducing the risk of errors. Unlike other data cleaning tools, OpenRefine offers a level of collaboration and organization that helps keep your cleaning process standardized and your team on track.
 
-## Donwload & Requirements
+## Download & Requirements
 
 OpenRefine is designed to work with Windows, Mac, and Linux operating systems and can be downloaded from <https://openrefine.org/download>. To run OpenRefine, Java must be installed. The Mac version includes Java, and OpenRefine 3.4 or higher offers a Windows package with Java included. Alternatively, you can install Java (JRE) from [Adoptium.net](https://adoptium.net). On Windows, if Java isn’t installed, OpenRefine will automatically open a browser window with installation instructions.
 
@@ -53,3 +53,17 @@ Using a web browser as a graphical interface, OpenRefine works as a desktop appl
 
 If you would like to use another browser instead, start OpenRefine and then point your chosen browser at the home screen: <http://127.0.0.1:3333>.
 :::
+
+## Some Privacy Considerations
+
+Before using any software to handle sensitive or private data, it's important to review its privacy policies. Below is a summary of key aspects of [OpenRefine's current privacy practices](https://openrefine.org/privacy):
+
+-   *Local Data Storage:* All data, history, and preferences in OpenRefine are stored locally on your computer. No data is sent to OpenRefine servers. The storage location depends on your OS.
+
+-   *Developer Access:* OpenRefine developers cannot access your data, as it never leaves your device.
+
+-   *External Communications:* Some features (e.g., reconciliation services, Google Drive/Sheets, SQL databases, Wikibase) do involve sending data to third parties. These are clearly indicated in the UI.
+
+-   *Encryption:* Data is not encrypted by default. You can protect it by enabling full disk encryption through your OS.
+
+-   *Cookies:* OpenRefine uses cookies only for OAuth authentication (Google Drive, Wikibase).
