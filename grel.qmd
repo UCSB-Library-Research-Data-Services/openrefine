@@ -6,31 +6,11 @@ Now that we're familiar with common transformations using the menu's preset opti
 
 In OpenRefine, expressions can be used in various areas to enhance data cleanup and transformation. You can apply expressions in the following functions:
 
-*Facets:*
+***Facets:*** `Custom text facet`, `Custom numeric facet`, and `Customized facets`
 
--   Custom text facet
+***Edit Cells:*** `Transform`, `Split multi-valued cells,` and `Join multi-valued cells.`
 
--   Custom numeric facet
-
--   Customized facets (click “Change” after creating them to open the expressions window)
-
-*Edit Cells:*
-
--   Transform
-
--   Split multi-valued cells
-
--   Join multi-valued cells
-
-*Edit Column:*
-
--   Split
-
--   Join
-
--   Add column based on this column
-
--   Add column by fetching URLs
+***Edit Column:*** `Split, Join`, `Add column based on this column`, `and Add column by fetching URLs`.
 
 Any of these options should prompt the Expressions Editor window as shown below:
 
@@ -44,9 +24,9 @@ We’ll now look at some practical examples that are relevant to our sample data
 
 ### Custom Data Transforms with GREL
 
-Let’s start by focusing on the `imdb_score` and `tmdb_score` columns. These columns contain floating-point numbers, right? To confirm, we can run a text facet to eyeball those values. As we examine the values, we’ll notice that tmdb scores don't follow the one decimal format as the imdb. in the number of decimal places. You might be thinking, *“This would be such an easy fix in Excel—there’s literally a button for it on the toolbar. Why bother using OpenRefine for that?”*
+Let’s start by focusing on the **imdb_score** and **tmdb_score** columns. These columns contain floating-point numbers, right? To confirm, we can run a text facet to eyeball those values. As we examine the values, we’ll notice that tmdb scores don't follow the one decimal format as the imdb. in the number of decimal places. You might be thinking, *“This would be such an easy fix in Excel—there’s literally a button for it on the toolbar. Why bother using OpenRefine for that?”*
 
-That’s a fair point—Excel does make it easy to change how numbers *look* by formatting decimal places. But here's the catch: Excel typically changes the **display** of the number, not the actual **underlying value**. So a number like `7.456` may *appear* as `7.5`, but it’s still stored as `7.456`, which can cause inconsistencies in downstream processes like sorting, filtering, or exporting.
+That’s a fair point—Excel does make it easy to change how numbers *look* by formatting decimal places. But here's the catch: Excel typically changes the **display** of the number, not the actual **underlying value**. So a number like **7.456** may *appear* as **7.5**, but it’s still stored as **7.456**, which can cause inconsistencies in downstream processes like sorting, filtering, or exporting.
 
 OpenRefine, on the other hand, lets you transform the actual data. You can standardize the number of decimal places across all values using expressions in GREL. That way, you’re not just changing how the data looks—you’re ensuring consistency at the data level, which is critical for clean, reliable datasets.
 
@@ -54,7 +34,7 @@ Also, OpenRefine is designed for handling large datasets with repeatable, audita
 
 #### Adjusting Decimal Points
 
-In order to adjust tmdb scores values, we will need to use an expression. Can you guess which one?
+In order to adjust **tmdb scores** values, we will need to use an expression. Can you guess which one?
 
 Let's try `round(value * 10) / 10.0` which will essentially round the value to the nearest integer and then take this whole number and shift the decimal point back. Apply that, then check how many cells were modified. But wait...have you remembered to convert the values to numbers? That is a key step, since the round function only applies to numbers!
 

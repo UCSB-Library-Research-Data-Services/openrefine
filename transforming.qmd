@@ -14,7 +14,7 @@ For instance, we can change type values movie and show to lowercase. Or we could
 
 Remember we have several entries for the same streaming service but with some variations? Editing those values for deduplication manually could take us too much time.
 
-Now, let's move to the `streaming column`. We want to keep six unique values in a simplified choice in title case: Amazon, Apple, Disney, Max, Netflix and Paramount. We can use the `Edit cells > Common transforms > To titlecase` and we end up with less choices, saving us quite some clicks and edits.
+Now, let's move to the **streaming column**. We want to keep six unique values in a simplified choice in title case: Amazon, Apple, Disney, Max, Netflix and Paramount. We can use the `Edit cells > Common transforms > To titlecase` and we end up with less choices, saving us quite some clicks and edits.
 
 **Clustering** helps you find and merge similar but inconsistently written values. It’s super useful when you have messy data — think entires like: “New York”, “new york”, “NewYork”, or “N.Y". You know they’re referring to the same location — but the computer doesn’t, unless you help it out. OpenRefine offers two main methods to resolve these type of issues.
 
@@ -37,7 +37,7 @@ Think of it like checking each pair of values closely and asking, "How different
 ### Most Commonly Used OpenRefine Clustering Methods
 
 | **Method**                               | Category         | **Description**                                                        | **Good For**                        | **Example**                        |
-|--------------|--------------|-----------------|--------------|--------------|
+|---------------|---------------|---------------|---------------|---------------|
 | **Fingerprint**                          | Key Collision    | Lowercases, removes punctuation, sorts words alphabetically            | General cleanup of similar words    | `John Smith` = `Smith John`        |
 | **Ngram-Fingerprint**                    | Key Collision    | Like Fingerprint but uses chunks of letters (n-grams)                  | Catching typos and small variations | `Jon` ≈ `John`                     |
 | **Metaphone3**                           | Key Collision    | Groups words that *sound* alike using English phonetics                | Names, brand names                  | `Katherine` ≈ `Catherine`          |
@@ -63,7 +63,7 @@ This step should reduce the total number of distinct values to 9. However, there
 ::: {.callout-note collapse="true" icon="false"}
 ## 🧠 Your Turn! Exploring Clustering Options
 
-Navigate the same method `Nearest Neighbor` and check which options could help the clustering for Amazon.
+Navigate the same method **Nearest Neighbor** and check which options could help the clustering for Amazon.
 
 ::: {.callout-note icon="false"}
 ## 🔑 Answer Key
