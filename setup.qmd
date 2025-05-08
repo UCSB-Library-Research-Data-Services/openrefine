@@ -44,7 +44,9 @@ To open the application anyway:
 macOS will remember this choice, and you won’t need to repeat these steps the next time you open OpenRefine.
 :::
 
-If you're using the desktop version, double-click on the OpenRefine icon or run the executable. OpenRefine runs in the browser but it does not require internet access for basic functions. It works best on browsers using the engine [WebKit](https://webkit.org), such as Chrome and Safari. No matter how you start OpenRefine, it will load its interface in your computer’s default browser.
+Once you download and install it, it runs as a small web server on your own computer, and you access that local web server by using your browser.
+
+Using a web browser as a graphical interface, OpenRefine works as a desktop application. To launch it, double-click on the OpenRefine icon or run the executable. Despite of running in the browser, Openrefine does not require internet access for basic functions. It works best on browsers using the engine [WebKit](https://webkit.org), such as Chrome and Safari. No matter how you start OpenRefine, it will load its interface in your computer’s default browser.
 
 ::: {.callout-important collapse="true"}
 ## Starting OpenRefine Straight in Your Browser
