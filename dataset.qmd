@@ -6,11 +6,11 @@ title: "Our Running Example"
 
 ![](images/streaming-services.png){width="370"}
 
-This workshop utilizes the **streaming-master-messy** comma-separated value (CSV) file which is derived from the movies and TV shows featured by major streaming services and distributed in Kaggle Project under a CC0 Public License:
+This workshop utilizes the **streaming-master-messy** comma-separated value (CSV) file which is derived from the movies and TV shows featured by major streaming services and distributed in Kaggle Project under a CC0 Public License[^1].
 
-Henrique, D. (2020). *A simple movie & TV show recommendation system*. Kaggle. <https://www.kaggle.com/code/dgoenrique/a-simple-movie-tv-show-recommendation-system?select=credits.csv>
+[^1]: Henrique, D. (2020). *A simple movie & TV show recommendation system*. Kaggle. <https://www.kaggle.com/code/dgoenrique/a-simple-movie-tv-show-recommendation-system?select=credits.csv>
 
-We have merged six `titles.csv` files—each representing one of the streaming services featured in this project (Amazon Prime Video, Apple TV+, Disney+, HBO Max, Netflix, and Paramount)—into a single master dataset.
+We have merged six `titles.csv` files—each representing one of the streaming services featured in this project (Amazon Prime Video, Apple TV+, Disney+, HBO Max, Netflix, and Paramount)—into a single master spreadsheet.
 
 The dataset contains 25,223 rows with movies and TV series titles along with the following variables as described in the data dictionary:
 
@@ -33,11 +33,6 @@ The dataset contains 25,223 rows with movies and TV series titles along with the
 -   tmdb_popularity: Votes on The Movie Database (TMDB).
 -   tmdb_score: Score on on The Movie Database TMDB.
 
-::: {.callout-important collapse="true"}
-## Disclaimer
-
-Please note that, for the purposes of this lesson, the data has been intentionally modified to support the associated exercises. Therefore, we do not vouch for the use of this dataset for actual research. The data has been specifically edited and curated for instructional purposes and may not represent a fully accurate or comprehensive source of data for formal analysis.
-:::
 
 ## Downloading the Dataset
 
@@ -48,6 +43,12 @@ Now that we have a clearer understanding of the data we'll be working with, plea
 **FIXME: \[add zenodo link to dataset\]**
 
 Let's open the file and check how the data looks like. Also, can you spot your favorite movie or TV series on it?
+
+::: {.callout-important collapse="true"}
+## Disclaimer
+
+Please note that, for the purposes of this lesson, the data has been intentionally modified to support the associated exercises. Therefore, we do not vouch for the use of this dataset for actual research. The data has been specifically edited and curated for instructional purposes and may not represent a fully accurate or comprehensive source of data for formal analysis.
+:::
 
 ## Our Challenge
 
