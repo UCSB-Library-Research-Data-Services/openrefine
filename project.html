@@ -260,35 +260,35 @@ Adjusting Display Settings
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Color and other formatting
+Color and Other Formatting
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
 <div id="callout-2" class="callout-2-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>Keep in mind that OpenRefine does <strong>not</strong> retain any original formatting from your file. Elements like cell colors, font styles, or background shading will be lost during import. Hyperlinked text will appear as plain text, though OpenRefine will detect any URLs and make them clickable within the project interface.</p>
-</div>
-</div>
-</div>
+<p>Keep in mind that OpenRefine <strong>does not</strong> retain any original formatting from your file. Elements like cell colors, font styles, or background shading will be lost during import. Hyperlinked text will appear as plain text, though OpenRefine will detect any URLs and make them clickable within the project interface.</p>
 <p>That said, relying on visual formatting or emphasis—like colors or bold text—to convey important meaning isn’t recommended in data management. These elements aren’t machine-readable and can lead to inconsistencies or misinterpretation during analysis. It’s always better to encode meaning directly in the data using clearly labeled columns or consistent values.</p>
+</div>
+</div>
+</div>
 <p>If your spreadsheet includes multiple worksheets, OpenRefine will display each one along with its row count. You’ll need to choose a single worksheet to import—only one can be selected at a time.</p>
 <p><img src="images/example-multiple-sheets.png" class="img-fluid"></p>
-<p>In the upper-right corner, you can rename your project and add tags to link it with related projects. Once you’re set, simply click <code>Create Project</code> Now that we’ve created our project, let’s take a step back and explore a few more features. Click the OpenRefine logo on the left-hand side and select <code>Open Project</code> Great! You should see the project we just created. By clicking on <code>About</code> you can edit the project metadata, helping keep everything organized and easy to locate. Experiment yourself.</p>
+<p>In the upper-right corner, you can rename your project and add tags to link it with related projects. Once you’re set, simply click <code>Create Project</code> Now that we’ve created our project, let’s take a step back and explore a few more features. Click the OpenRefine logo on the left-hand side and select <code>Open Project</code> Great! You should see the project we just created. By clicking on <strong>About</strong> you can edit the project metadata, helping keep everything organized and easy to locate. Experiment yourself.</p>
 <p><img src="images/project-details-01.png" class="img-fluid"></p>
-<p>If you scroll down, you’ll see the <code>Project ID</code> assigned to your new project in the metadata panel—nice work! Now that everything’s set up, let’s jump back into the project and explore some of OpenRefine’s powerful features. To return to your project, just click on its name.</p>
+<p>If you scroll down, you’ll see the <strong>Project ID</strong> assigned to your new project in the metadata panel—nice work! Now that everything’s set up, let’s jump back into the project and explore some of OpenRefine’s powerful features. To return to your project, just click on its name.</p>
 </section>
 <section id="saving-things" class="level2">
 <h2 class="anchored" data-anchor-id="saving-things">Saving Things</h2>
-<p>OpenRefine automatically records all your actions, which are listed in the <code>Undo/Redo</code> panel we will be exploring more soon. This includes things like flagging and starring rows. However, it does <em>not</em> save facets (which will learn more about), filters, or any visual changes you’ve made—such as the number of visible rows, column sorting, or collapsed columns. A good rule to remember: if it’s not in the <code>Undo/Redo panel</code>, it won’t be saved when you exit the project.</p>
+<p>OpenRefine automatically records all your actions, which are listed in the <code>Undo/Redo</code> panel we will be exploring more soon. This includes things like flagging and starring rows. However, it does <em>not</em> save facets (which will learn more about), filters, or any visual changes you’ve made—such as the number of visible rows, column sorting, or collapsed columns. A good rule to remember: if it’s not in the Undo/Redo panel, it won’t be saved when you exit the project.</p>
 <p>By default, OpenRefine autosaves your project every five minutes. If you’d like you can adjust this setting using the command line and following the instructions laid out <a href="https://openrefine.org/docs/manual/running#jvm-preferences">here</a>.</p>
-<p>While you can’t save general view settings, you <em>can</em> save and share your current facets and filters. To do this, click <strong><code>Permalink</code></strong>. This generates a new URL that reloads the project with your current facets and filters, including specific settings (like sorting by count instead of name). Copy and save that URL to return to the same filtered view later.</p>
+<p>While you can’t save general view settings, you can save and share your current facets and filters. To do this, click <strong><code>Permalink</code></strong>. This generates a new URL that reloads the project with your current facets and filters, including specific settings (like sorting by count instead of name). Copy and save that URL to return to the same filtered view later.</p>
 <section id="where-are-projects-stored-locally" class="level3">
 <h3 class="anchored" data-anchor-id="where-are-projects-stored-locally">Where are projects stored locally?</h3>
-<p>All of your raw project files are stored in your OpenRefine <em>work directory</em>. Each file is named using the unique <code>Project ID</code> assigned by OpenRefine. You can find this ID by going to the <code>Open Project</code> screen and clicking the <code>About</code> link next to the project. Let’s take a moment to check where your files are.</p>
+<p>All of your raw project files are stored in your OpenRefine <em>work directory</em>. Each file is named using the unique <code>Project ID</code> assigned by OpenRefine. You can find this ID by going to the <code>Open Project</code> screen and clicking the <strong>About</strong> link next to the project. Let’s take a moment to check where your files are.</p>
 <p>OpenRefine stores data in two places:</p>
 <ul>
 <li><p>Program files in the program directory, wherever you’ve chose to installed it</p></li>
-<li><p>Project files in what we call the <code>workspace directory</code></p></li>
+<li><p>Project files in what we call the <strong>workspace directory</strong></p></li>
 </ul>
 <p>You can access the workspace directory by:</p>
 <ul>
