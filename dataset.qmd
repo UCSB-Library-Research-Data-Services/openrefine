@@ -42,7 +42,7 @@ Now that we have a clearer understanding of the data we'll be working with, plea
 ![](images/download-icon.png){width="56"}
 <a href="data/master-streaming-messy.csv" download>Download the csv File</a>
 
-Let's open the file and check how the data looks like. Also, can you spot your favorite movie or TV series on it?
+Let's open the file and check how the data looks like. Chances are you favorite movies or TV shows are listed on it. 
 
 ::: {.callout-important collapse="true"}
 ## Disclaimer
