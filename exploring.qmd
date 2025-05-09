@@ -10,7 +10,9 @@ Now, let’s dive into one of the most powerful and defining features of OpenRef
 
 One type of facet is called a ‘Text facet’. This groups all the identical text values in a column and lists each value with the number of records it appears in. The facet information always appears in the left hand panel in the OpenRefine interface.
 
-After applying a text facet to the **title** column, you'll notice that the number of unique choices differs from the total number of rows. This happens because a single title may appear across multiple streaming platforms, and also because different productions can share the same name. Let’s **sort the facet by count** to explore how often titles like **Cinderella** appear.
+After applying a text facet to the **title** column, you'll notice that the number of unique choices differs from the total number of rows. This happens because a single title may appear across multiple streaming platforms, and also because different productions can share the same name. You can view and copy those options as tab-separated values by clicking the link.
+
+Let’s **sort the facet by count** to explore how often titles like **Cinderella** appear.
 
 ::: columns
 ::: {.column width="50%"}
@@ -26,7 +28,7 @@ After applying a text facet to the **title** column, you'll notice that the numb
 
 ![](images/title-count-cinderella.png)
 
-You’ll notice that each entry corresponds to a unique production, often from a different year or with a distinct plot, which is why they each have their own specific ID. However, it's important to note that the same production might appear on multiple streaming services, sharing the same ID. While we don’t have duplicate entries within a single streaming service, we do need to check for cases where the same production appears under different services with the same ID.
+Each entry represents a unique production—typically from a different year or with a different plot—which is why each has its own specific ID. However, the same production can appear on multiple streaming services, using the same ID. While we ensure there are no duplicate entries within a single streaming service, we still need to check for cases where the same production appears across different services under the same ID.
 
 ### Checking for Duplicates
 
