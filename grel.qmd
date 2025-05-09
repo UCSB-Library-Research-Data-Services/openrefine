@@ -62,7 +62,7 @@ Apparently, there's no limit to how many are stored, so it may accumulate expres
 
 ### Dealing with Arrays
 
-Now that we've completed a basic custom transformation and gained a better understanding of how GREL works, let’s turn our attention back to the **`country`** column. Earlier, we corrected entries where **"USA"** was used instead of **"US"** to ensure that all country codes follow the two-character format defined by the ISO.
+Now that we've completed a basic custom transformation and gained a better understanding of how GREL works, let’s turn our attention back to the **country** column. Earlier, we corrected entries where **"USA"** was used instead of **"US"** to ensure that all country codes follow the two-character format defined by the ISO.
 
 By applying a text facet, we will notice that there are over 1,030 unique values. This high number is due to OpenRefine treating different sequences of multiple countries as distinct entries. Although if we were to check country representation within our dataset, this would be challenging because the country information is currently stored as arrays.
 
