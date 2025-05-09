@@ -37,10 +37,10 @@ The dataset we will be working with contains 25,223 rows with movies and TV seri
 
 ## Downloading the Dataset
 
-Now that we have a clearer understanding of the data we'll be working with, please take a moment to download and save the file to your working environment.
+Now that we have a clearer understanding of the data we'll be working with, please take a moment to download and save the file `master-streaming-messy.csv` to your working environment.
 
 ![](images/download-icon.png){width="56"}
-<a href="data/data.csv" download>Download the csv File</a>
+<a href="data/master-streaming-messy.csv" download>Download the csv File</a>
 
 Let's open the file and check how the data looks like. Also, can you spot your favorite movie or TV series on it?
 
