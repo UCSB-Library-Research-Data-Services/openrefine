@@ -235,7 +235,8 @@ ul.task-list li input[type="checkbox"] {
 <section id="text-facets" class="level2">
 <h2 class="anchored" data-anchor-id="text-facets">Text Facets</h2>
 <p>One type of facet is called a ‘Text facet’. This groups all the identical text values in a column and lists each value with the number of records it appears in. The facet information always appears in the left hand panel in the OpenRefine interface.</p>
-<p>After applying a text facet to the <strong>title</strong> column, you’ll notice that the number of unique choices differs from the total number of rows. This happens because a single title may appear across multiple streaming platforms, and also because different productions can share the same name. Let’s <strong>sort the facet by count</strong> to explore how often titles like <strong>Cinderella</strong> appear.</p>
+<p>After applying a text facet to the <strong>title</strong> column, you’ll notice that the number of unique choices differs from the total number of rows. This happens because a single title may appear across multiple streaming platforms, and also because different productions can share the same name. You can view and copy those options as tab-separated values by clicking the link.</p>
+<p>Let’s <strong>sort the facet by count</strong> to explore how often titles like <strong>Cinderella</strong> appear.</p>
 <div class="columns">
 <div class="column" style="width:50%;">
 <p><img src="images/title-facet.png" class="img-fluid"></p>
@@ -245,7 +246,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <p>“Five times, right? Let’s click <code>Include</code> to review the items and check for any duplicates.</p>
 <p><img src="images/title-count-cinderella.png" class="img-fluid"></p>
-<p>You’ll notice that each entry corresponds to a unique production, often from a different year or with a distinct plot, which is why they each have their own specific ID. However, it’s important to note that the same production might appear on multiple streaming services, sharing the same ID. While we don’t have duplicate entries within a single streaming service, we do need to check for cases where the same production appears under different services with the same ID.</p>
+<p>Each entry represents a unique production—typically from a different year or with a different plot—which is why each has its own specific ID. However, the same production can appear on multiple streaming services, using the same ID. While we ensure there are no duplicate entries within a single streaming service, we still need to check for cases where the same production appears across different services under the same ID.</p>
 <section id="checking-for-duplicates" class="level3">
 <h3 class="anchored" data-anchor-id="checking-for-duplicates">Checking for Duplicates</h3>
 <p>To perform this check, we can create a text facet for the <strong>ID</strong> <strong>column</strong>. But before proceeding, we should exclude any values already filtered for ‘Cinderella’. If we don’t do this, the new facet will only apply to the selected rows and might not cover all instances of a production across streaming services.</p>
