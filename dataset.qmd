@@ -40,8 +40,7 @@ The dataset we will be working with contains 25,223 rows with movies and TV seri
 Now that we have a clearer understanding of the data we'll be working with, please take a moment to download and save the file to your working environment.
 
 ![](images/download-icon.png){width="56"}
-
-**FIXME: \[add zenodo link to dataset\]{target="_blank"}**
+<a href="data/data.csv" download>Download the csv File</a>
 
 Let's open the file and check how the data looks like. Also, can you spot your favorite movie or TV series on it?
 
