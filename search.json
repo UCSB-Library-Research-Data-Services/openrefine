@@ -324,7 +324,7 @@
     "href": "dataset.html#downloading-the-dataset",
     "title": "Our Running Example",
     "section": "Downloading the Dataset",
-    "text": "Downloading the Dataset\nNow that we have a clearer understanding of the data we’ll be working with, please take a moment to download and save the file to your working environment.\n\n**FIXME: [add zenodo link to dataset]{target=“_blank”}**\nLet’s open the file and check how the data looks like. Also, can you spot your favorite movie or TV series on it?\n\n\n\n\n\n\nDisclaimer\n\n\n\n\n\nPlease note that, for the purposes of this lesson, the data has been intentionally modified to support the associated exercises. Therefore, we do not vouch for the use of this dataset for actual research. The data has been specifically edited and curated for instructional purposes and may not represent a fully accurate or comprehensive source of data for formal analysis.",
+    "text": "Downloading the Dataset\nNow that we have a clearer understanding of the data we’ll be working with, please take a moment to download and save the file to your working environment.\n Download the csv File\nLet’s open the file and check how the data looks like. Also, can you spot your favorite movie or TV series on it?\n\n\n\n\n\n\nDisclaimer\n\n\n\n\n\nPlease note that, for the purposes of this lesson, the data has been intentionally modified to support the associated exercises. Therefore, we do not vouch for the use of this dataset for actual research. The data has been specifically edited and curated for instructional purposes and may not represent a fully accurate or comprehensive source of data for formal analysis.",
     "crumbs": [
       "Our Running Example"
     ]
