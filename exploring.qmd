@@ -111,7 +111,7 @@ For example, you can click edit right next to *Apple tv* or even include other m
 ```         
 1.  1901
 2.  2021
-3.  By default all columns in OpenRefine are formatted as a string of text. To ensure you want it to treat it as another type, you will need to transform values accordingly.
+3. By default all columns in OpenRefine are formatted as a string of text. To ensure you want it to treat it as another data type, you will need to transform values accordingly.
 ```
 :::
 :::

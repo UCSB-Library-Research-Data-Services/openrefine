@@ -16,7 +16,7 @@ One way to filter down our data is to use the `include` or `exclude` buttons on 
 
 2.  Whilst hovering over *Hercules*, move to the right and click the `include` option. This will include this title, changing from blue to orange, and new options of `edit` and `exclude` will be presented. Note that in the top of the page, “5 matching rows” is now displayed instead of the thousand rows we had previously.
 
-3.  You can include other titles in your current filter - e.g.click on *The Stranger* in the same way to include it in the filter.
+3.  You can include other titles in your current filter - e.g. click on *The Stranger* in the same way to include it in the filter.
 
 4.  Alternatively, you can click the title to include it in the filter instead of clicking the `include`/`exclude` buttons. This will include the selected titles and exclude all other options in a single step, which can be useful.
 
