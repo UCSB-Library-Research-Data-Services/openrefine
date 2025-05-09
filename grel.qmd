@@ -92,7 +92,7 @@ While arrays are not necessarily messy data, we can apply GREL to separate piece
 
 From now on, we will continue working with the "country" column and live "countries" with the array. For the column "country" our task will be to extract only the first value in the array.
 
-First, let's ensure we remove the both square brackets...
+First, let's ensure we remove both square brackets...
 
 `value.replace('[', "").replace(']', "")`
 
