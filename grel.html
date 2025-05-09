@@ -198,6 +198,8 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#custom-data-transforms-with-grel" id="toc-custom-data-transforms-with-grel" class="nav-link active" data-scroll-target="#custom-data-transforms-with-grel">Custom Data Transforms with GREL</a></li>
+  <li><a href="#adjusting-decimal-points" id="toc-adjusting-decimal-points" class="nav-link" data-scroll-target="#adjusting-decimal-points">Adjusting Decimal Points</a></li>
+  <li><a href="#reusing-expressions" id="toc-reusing-expressions" class="nav-link" data-scroll-target="#reusing-expressions">Reusing Expressions</a></li>
   <li><a href="#dealing-with-arrays" id="toc-dealing-with-arrays" class="nav-link" data-scroll-target="#dealing-with-arrays">Dealing with Arrays</a></li>
   </ul>
 </nav>
@@ -240,8 +242,9 @@ ul.task-list li input[type="checkbox"] {
 <p>That’s a fair point—Excel does make it easy to change how numbers <em>look</em> by formatting decimal places. But here’s the catch: Excel typically changes the <strong>display</strong> of the number, not the actual <strong>underlying value</strong>. So a number like <strong>7.456</strong> may <em>appear</em> as <strong>7.5</strong>, but it’s still stored as <strong>7.456</strong>, which can cause inconsistencies in downstream processes like sorting, filtering, or exporting.</p>
 <p>OpenRefine, on the other hand, lets you transform the actual data. You can standardize the number of decimal places across all values using expressions in GREL. That way, you’re not just changing how the data looks—you’re ensuring consistency at the data level, which is critical for clean, reliable datasets.</p>
 <p>Also, OpenRefine is designed for handling large datasets with repeatable, auditable transformations. So once you clean up one column, you can apply the same steps to others, or even to other projects. That’s something Excel just isn’t built for.</p>
-<section id="adjusting-decimal-points" class="level4">
-<h4 class="anchored" data-anchor-id="adjusting-decimal-points">Adjusting Decimal Points</h4>
+</section>
+<section id="adjusting-decimal-points" class="level3">
+<h3 class="anchored" data-anchor-id="adjusting-decimal-points">Adjusting Decimal Points</h3>
 <p>In order to adjust <strong>tmdb scores</strong> values, we will need to use an expression. Can you guess which one?</p>
 <p>Let’s try <code>round(value * 10) / 10.0</code> which will essentially round the value to the nearest integer and then take this whole number and shift the decimal point back. Apply that, then check how many cells were modified. But wait…have you remembered to convert the values to numbers? That is a key step, since the round function only applies to numbers!</p>
 <p>Before applying the expression OpenRefine gives you a hint in case there are any syntax errors and how values will look like if you proceed. You may also choose the behavior in case some rows</p>
@@ -254,12 +257,11 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <p>In this particular case, we chose to retain the original values because we had already verified that the cells contain only numeric data. Otherwise, any blank cells would have resulted in errors.</p>
 </section>
-<section id="reusing-expressions" class="level4">
-<h4 class="anchored" data-anchor-id="reusing-expressions">Reusing Expressions</h4>
+<section id="reusing-expressions" class="level3">
+<h3 class="anchored" data-anchor-id="reusing-expressions">Reusing Expressions</h3>
 <p>Another great feature of OpenRefine is the ability to easily reuse expressions within the same project or across different ones. The <strong>History</strong> tab records all the expressions you’ve written.</p>
 <p><img src="images/grel-reuse.png" class="img-fluid" width="458"></p>
 <p>Apparently, there’s no limit to how many are stored, so it may accumulate expressions you didn’t end up using or had to revise. For expressions that worked well, consider starring them to make future reuse easier. However, note that the history is cleared when you upgrade to a new version of OpenRefine. The <em>Help</em> tab is also handy for quick references on how to write expressions.</p>
-</section>
 </section>
 <section id="dealing-with-arrays" class="level3">
 <h3 class="anchored" data-anchor-id="dealing-with-arrays">Dealing with Arrays</h3>
