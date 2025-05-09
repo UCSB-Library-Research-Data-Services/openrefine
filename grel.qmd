@@ -32,7 +32,7 @@ OpenRefine, on the other hand, lets you transform the actual data. You can stand
 
 Also, OpenRefine is designed for handling large datasets with repeatable, auditable transformations. So once you clean up one column, you can apply the same steps to others, or even to other projects. That’s something Excel just isn’t built for.
 
-#### Adjusting Decimal Points
+### Adjusting Decimal Points
 
 In order to adjust **tmdb scores** values, we will need to use an expression. Can you guess which one?
 
@@ -52,7 +52,7 @@ You may also choose how the system should behave if any error occurs during the 
 
 In this particular case, we chose to retain the original values because we had already verified that the cells contain only numeric data. Otherwise, any blank cells would have resulted in errors.
 
-#### Reusing Expressions
+### Reusing Expressions
 
 Another great feature of OpenRefine is the ability to easily reuse expressions within the same project or across different ones. The **History** tab records all the expressions you've written.
 
