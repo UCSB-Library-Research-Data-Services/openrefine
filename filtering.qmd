@@ -18,9 +18,9 @@ One way to filter down our data is to use the `include` or `exclude` buttons on 
 
 3.  You can include other titles in your current filter - e.g.click on *The Stranger* in the same way to include it in the filter.
 
-4.  Alternatively, you can click the name of the species to include it in the filter instead of clicking the `include`/`exclude` buttons. This will include the selected species and exclude all other options in a single step, which can be useful.
+4.  Alternatively, you can click the title to include it in the filter instead of clicking the `include`/`exclude` buttons. This will include the selected titles and exclude all other options in a single step, which can be useful.
 
-5.  Click `include` and `exclude` on the other species and notice how the entries appear and disappear from the data table to the right.
+5.  Click `include` and `exclude` on the other titles and notice how the entries appear and disappear from the data table to the right.
 
 Click on `reset` at the top-right of the facet before continuing to the next step.
 
